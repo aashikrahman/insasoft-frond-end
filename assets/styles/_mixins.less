@@ -1,0 +1,88 @@
+
+@import "_veriables.less";
+
+.container-centered {
+  max-width: @container-width;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  
+  
+  @media(max-width:1500px) and (min-width:990px){
+       padding: 0 60px;
+  }
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.head-font{
+    font-weight: 750;
+    font-size: 32px;
+    padding: 1rem 0;
+
+    background: rgb(0, 64, 185);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 64, 185, 1) 0%,
+      rgba(0, 36, 129, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: @primary-font;
+
+    @media(max-width:994px){
+      font-size: 22px;
+    }
+}
+
+.head-font-secondary{
+  font-weight: 750;
+  font-size: 32px;
+  padding: 1rem 0;
+
+  color: #fff;
+ 
+
+  @media(max-width:994px){
+    font-size: 22px;
+  }
+}
+
+.primary-bg{
+    background: rgb(0, 64, 185);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 64, 185, 1) 0%,
+      rgba(0, 36, 129, 1) 100%
+    );
+}
+
+.read-more-btn{
+  a {
+    color: #000;
+    font-weight: 550;
+    &:hover {
+      text-decoration: none;
+      color: #16278d;
+
+      &::after {
+        margin-left: 1rem;
+      }
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 19.26px;
+      height: 12.51px;
+      margin-left: 0.6rem;
+      background-image: url("../images/button-arrow.svg");
+      z-index: 1212;
+      transition: 0.5s;
+    }
+  }
+}
+
+

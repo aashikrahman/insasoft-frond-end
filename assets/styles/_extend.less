@@ -1,0 +1,68 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    ::before,
+    ::after {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box !important;
+
+    }
+    
+    body{
+        font-family: @primary-font;
+        overflow-x: hidden;
+    }
+    
+    p{
+        font-family: @primary-font; 
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+    a {
+        color: @primary-color;
+        font-family: @primary-font;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: none;
+          }
+    }
+
+    p
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: normal;
+        font-family: @primary-font;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    h2 {
+        font-family:  @primary-font;
+        color: @primary-color;
+        font-weight: 750;
+        font-size: 102px;
+    }
+
+    /* Change the white to any color */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+    }
+
+   
+
+    @import "_fonts.less";
+    @import "_veriables.less";
+    @import "_mixins.less";
+    @import "_home.less";
+    @import "_services.less";
