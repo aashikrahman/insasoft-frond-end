@@ -8,6 +8,11 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box !important;
 }
+dl,
+ol,
+ul {
+  margin-bottom: 0 !important;
+}
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
@@ -193,7 +198,6 @@ input:-webkit-autofill:active {
 .head-font {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -208,7 +212,6 @@ input:-webkit-autofill:active {
 .head-font-secondary {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   color: #fff;
 }
 @media (max-width: 994px) {
@@ -399,7 +402,7 @@ input:-webkit-autofill:active {
   top: -160px;
   bottom: 0;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1500px) {
   .banner .banner-elements {
     right: -570px;
   }
@@ -425,25 +428,25 @@ input:-webkit-autofill:active {
 .banner .banner-main-image img {
   max-height: 720px;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1500px) {
   .banner .banner-main-image img {
     max-height: 600px;
   }
 }
 .service-box-main {
   background: #f6f8fc;
-  padding: 3rem 0;
+  padding: 5rem 0;
   padding-bottom: 1rem;
 }
 .service-box-main .service-head h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 2rem;
 }
 @media (max-width: 994px) {
   .service-box-main .service-head h2 {
@@ -468,12 +471,58 @@ input:-webkit-autofill:active {
   margin: 0.5rem;
   background: #ffffff;
   padding: 1rem;
-  position: relative;
   margin-bottom: 2rem;
   padding-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.service-box-main .service-box .sv-hover-body {
+  width: 100%;
+  height: 0%;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -12;
+  transition: 0.5s;
+}
+.service-box-main .service-box .sv-hover-pattern {
+  position: absolute;
+  right: -320px;
+  transition: 0.5s;
+  bottom: -50px;
+  opacity: 0.6;
+}
+.service-box-main .service-box:hover .sv-hover-pattern {
+  right: -160px;
+}
+.service-box-main .service-box:hover .sv-hover-body {
+  height: 100%;
+}
+.service-box-main .service-box:hover p {
+  color: #fff;
+  transition: 1s;
+}
+.service-box-main .service-box:hover .app-icons::before {
+  transform: rotate(292deg);
+}
+.service-box-main .service-box:hover h5 {
+  color: #fff;
+  transition: 1s;
+}
+.service-box-main .service-box:hover a {
+  color: #fff;
+}
+.service-box-main .service-box:hover a .arrow-icon {
+  opacity: 1;
+  visibility: visible;
+  margin-left: 0px;
+  transition: 0.1;
 }
 .service-box-main .service-box p {
   font-size: 14px;
+  transition: 1s;
 }
 .service-box-main .service-box .app-icons {
   margin: 1rem 0;
@@ -490,20 +539,28 @@ input:-webkit-autofill:active {
   top: -5px;
   z-index: -1;
   background-image: url("../images/icons-shape.svg");
+  transition: 1s;
 }
 .service-box-main .service-box .app-icons img {
   z-index: 2112;
-  margin-left: 52px;
+  margin-left: 42px;
   margin-top: 16px;
 }
 .service-box-main .service-box a {
   text-decoration: none;
   color: #232323;
 }
+.service-box-main .service-box a .arrow-icon {
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 20px;
+  transition: 0.5s;
+}
 .service-box-main .service-box h5 {
   margin-bottom: 1rem;
   font-size: 18px;
   max-width: 220px;
+  transition: 1s;
 }
 .about-us {
   padding: 110px;
@@ -545,6 +602,7 @@ input:-webkit-autofill:active {
   z-index: -1;
   top: -2rem;
   right: 8rem;
+  animation: moverlefttoright 6s ease-out infinite;
 }
 .about-us .about-us-wrapper .about-img .main-img img {
   height: 32rem;
@@ -558,6 +616,7 @@ input:-webkit-autofill:active {
   position: absolute;
   right: 6rem;
   bottom: -4rem;
+  animation: mover 6s ease-out infinite;
 }
 .about-us .about-us-wrapper .about-img img::after {
   content: "";
@@ -583,7 +642,6 @@ input:-webkit-autofill:active {
 .about-us .about-us-wrapper .about-content h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -650,7 +708,6 @@ input:-webkit-autofill:active {
 .caseStudies .title-row h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -823,7 +880,6 @@ input:-webkit-autofill:active {
 .our-client-says .our-client-wrapper .client-title h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1092,8 +1148,7 @@ input:-webkit-autofill:active {
   place-items: center;
 }
 .frequently-qstn .frequently-qstn-wrapper .frequently-qstn-img {
-  -webkit-animation: breathing 5s ease-out infinite normal;
-  animation: breathing 5s ease-out infinite normal;
+  animation: breathing 4s ease-out infinite;
 }
 @media (max-width: 990px) {
   .frequently-qstn .frequently-qstn-wrapper {
@@ -1117,7 +1172,6 @@ input:-webkit-autofill:active {
   margin-bottom: 2rem;
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1242,7 +1296,7 @@ footer .footer-bottom p {
   padding-left: 100px;
   margin-left: 20px;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #0136A4;
+  -webkit-text-stroke: 1px #0136a4;
   transition: 0.5s;
 }
 .marquees .mySwiperMar .swiper-slide h4.marquee-title:hover {
@@ -1308,7 +1362,7 @@ footer .footer-bottom p {
   font-family: "Montserrat", sans-serif;
 }
 .breadcrumbs {
-  background: #F6F8FC;
+  background: #f6f8fc;
   height: 50px;
   display: flex;
   align-items: center;
@@ -1332,7 +1386,6 @@ footer .footer-bottom p {
 .about-inner .about-wrapper .abt-inner-content h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1346,7 +1399,7 @@ footer .footer-bottom p {
   }
 }
 .core-values .main-box {
-  padding: 0  5rem;
+  padding: 0 5rem;
   padding-bottom: 4rem;
   margin: 3rem 0;
   background: #0040b9;
@@ -1362,7 +1415,6 @@ footer .footer-bottom p {
 .core-values .main-box .title h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   color: #fff;
 }
 @media (max-width: 994px) {
@@ -1377,7 +1429,7 @@ footer .footer-bottom p {
   gap: 1rem;
 }
 .core-values .main-box .cards-wrapper .cards {
-  background: #023AA2;
+  background: #023aa2;
   padding: 1rem;
 }
 .core-values .main-box .cards-wrapper .cards .icon img {
@@ -1394,19 +1446,18 @@ footer .footer-bottom p {
   margin-top: 1rem;
 }
 .core-values .main-box .single-card .cards {
-  background: #023AA2;
+  background: #023aa2;
   padding: 2rem;
 }
 .what-we-do {
   padding: 3rem 0;
 }
 .what-we-do .title {
-  padding: 1rem 0 ;
+  padding: 1rem 0;
 }
 .what-we-do .title h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1427,7 +1478,6 @@ footer .footer-bottom p {
 .what-we-do .tab-content .tab-content-wrapper .tab-content h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1474,7 +1524,6 @@ footer .footer-bottom p {
 .overview .frequently-qstn-wrapper .frequently-askin-qstn .qstn-title h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1579,6 +1628,7 @@ footer .footer-bottom p {
   position: absolute;
   right: 0;
   top: -50px;
+  animation: moverlefttoright 6s ease-out infinite;
 }
 .applications-banner .shapes .banner-shape-3-r img {
   height: 2rem;
@@ -1594,10 +1644,16 @@ footer .footer-bottom p {
   left: 300px;
   animation: rotateme 20s linear infinite;
 }
+@media (max-width: 1140px) {
+  .applications-banner .shapes .banner-shape-1 {
+    left: 103px;
+  }
+}
 .applications-banner .shapes .banner-shape-2 {
   position: absolute;
   left: 0;
   bottom: -210px;
+  animation: mover 6s ease-out infinite;
 }
 .applications-banner .shapes .banner-shape-2 img {
   height: 3rem;
@@ -1615,7 +1671,6 @@ footer .footer-bottom p {
 .applications-banner .application-wrapper .title h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1634,17 +1689,37 @@ footer .footer-bottom p {
 .applications-banner .application-wrapper .bread-crubs ul li {
   list-style: none;
   display: inline;
-  margin-right: 1rem;
   text-align: center;
+}
+.applications-banner .application-wrapper .bread-crubs ul li::after {
+  content: "/";
+  font-weight: 550px;
+  color: #0d093e;
+  margin-left: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+.applications-banner .application-wrapper .bread-crubs ul li:last-child::after {
+  display: none;
 }
 .applications-banner .application-wrapper .bread-crubs ul li a {
   font-weight: 550;
+}
+.description-main {
+  margin-bottom: 7rem;
 }
 .description-main .description-wrapper {
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   padding: 6rem;
   border-radius: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.description-main .description-wrapper .desc-shape {
+  position: absolute;
+  right: 0;
+  top: -270px;
+  opacity: 0.2;
 }
 .description-main .description-wrapper .content .title {
   margin-bottom: 2rem;
@@ -1660,8 +1735,7 @@ footer .footer-bottom p {
   line-height: 1.5rem;
 }
 .development-expertise {
-  padding: 2rem 0;
-  margin: 4rem 0 4rem 0;
+  margin-bottom: 8rem;
 }
 .development-expertise .title {
   margin-bottom: 3rem;
@@ -1669,7 +1743,6 @@ footer .footer-bottom p {
 .development-expertise .title h4 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1689,29 +1762,86 @@ footer .footer-bottom p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+@media (max-width: 990px) {
+  .development-expertise .development-cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .development-expertise .development-cards-wrapper .development-cards {
+  overflow: hidden;
   border: 1px solid #e5e5e5;
   padding: 2rem 2rem 4rem 2rem;
+  transition: 0.5s;
+  position: relative;
+}
+.development-expertise .development-cards-wrapper .development-cards .dev-card-icon {
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  position: absolute;
+  left: -110px;
+  top: -95px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.5s;
+}
+.development-expertise .development-cards-wrapper .development-cards .dev-card-thumb {
+  z-index: 111;
+  margin-bottom: 2rem;
+}
+.development-expertise .development-cards-wrapper .development-cards .dev-card-thumb img {
+  z-index: 2;
+}
+.development-expertise .development-cards-wrapper .development-cards .dev-shape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.development-expertise .development-cards-wrapper .development-cards .ios-blue-body {
+  width: 100%;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: -3;
 }
 .development-expertise .development-cards-wrapper .development-cards h3 {
   font-weight: 750;
-  font-size: 32px;
-  padding: 1rem 0;
-  background: #0040b9;
-  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Montserrat", sans-serif;
   font-size: 22px;
-}
-@media (max-width: 994px) {
-  .development-expertise .development-cards-wrapper .development-cards h3 {
-    font-size: 22px;
-  }
+  color: #2459a8;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
+  transition: 0.5s;
 }
 .development-expertise .development-cards-wrapper .development-cards p {
   font-size: 16px;
   line-height: 1.5rem;
+  transition: 0.5s;
+}
+.development-expertise .development-cards-wrapper .development-cards:hover {
+  cursor: pointer;
+}
+.development-expertise .development-cards-wrapper .development-cards:hover .ios-blue-body {
+  height: 100%;
+}
+.development-expertise .development-cards-wrapper .development-cards:hover p {
+  color: #fff !important;
+}
+.development-expertise .development-cards-wrapper .development-cards:hover h3 {
+  color: #fff;
+}
+.development-expertise .development-cards-wrapper .development-cards:hover .dev-card-icon {
+  left: -20px;
+  top: -25px;
+}
+.development-expertise .development-cards-wrapper .development-cards:hover .dev-shape {
+  opacity: 1;
+  visibility: hidden;
 }
 .development-Process {
   margin: 2rem 0 4rem 0;
@@ -1722,7 +1852,7 @@ footer .footer-bottom p {
   padding: 1rem 2rem;
   border-radius: 25px;
   padding-bottom: 8rem;
-  margin: 8rem 0;
+  margin: 10rem 0 8rem;
 }
 .development-Process .development-Process-box-main .title {
   padding: 3rem 0;
@@ -1731,7 +1861,6 @@ footer .footer-bottom p {
 .development-Process .development-Process-box-main .title h3 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   color: #fff;
 }
 @media (max-width: 994px) {
@@ -1746,6 +1875,16 @@ footer .footer-bottom p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
+}
+@media (max-width: 1170px) {
+  .development-Process .development-Process-box-main .development-Process-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 624px) {
+  .development-Process .development-Process-box-main .development-Process-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box {
   color: #fff;
@@ -1765,6 +1904,11 @@ footer .footer-bottom p {
   top: 73px;
   background: url(../images/porcess-shape-white.png);
   background-repeat: no-repeat;
+}
+@media (max-width: 1460px) {
+  .development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box::after {
+    display: none;
+  }
 }
 .development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box:first-child::after {
   display: none;
@@ -1804,7 +1948,14 @@ footer .footer-bottom p {
   display: none;
 }
 .why-choose-insasoft-service {
-  margin: 6rem 0 4rem 0;
+  margin: 8rem 0 8rem 0;
+  position: relative;
+}
+.why-choose-insasoft-service .why-choose-element {
+  position: absolute;
+  right: 0;
+  top: -129px;
+  transform: rotate(180deg);
 }
 .why-choose-insasoft-service .why-choose-insasoft-wrapper {
   display: grid;
@@ -1812,10 +1963,33 @@ footer .footer-bottom p {
   align-items: center;
   gap: 2rem;
 }
+@media (max-width: 1170px) {
+  .why-choose-insasoft-service .why-choose-insasoft-wrapper {
+    grid-template-columns: 1fr ;
+  }
+}
+.why-choose-insasoft-service .why-choose-insasoft-wrapper .why-choose-box-sv {
+  position: relative;
+}
+.why-choose-insasoft-service .why-choose-insasoft-wrapper .why-choose-box-sv .why-choose-img {
+  animation: mover 6s ease-out infinite;
+}
+.why-choose-insasoft-service .why-choose-insasoft-wrapper .why-choose-box-sv .why-choose-img-element {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+}
+@media (max-width: 1170px) {
+  .why-choose-insasoft-service .why-choose-insasoft-wrapper .why-choose-box-sv .why-choose-img-element {
+    right: 0;
+  }
+}
+.why-choose-insasoft-service .why-choose-insasoft-wrapper .why-choose-box-sv .why-choose-img-element img {
+  height: 4rem;
+}
 .why-choose-insasoft-service .why-choose-insasoft-wrapper .why-choose-content h3 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1839,6 +2013,11 @@ footer .footer-bottom p {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+@media (max-width: 1250px) {
+  .call-to-action-inner .call-to-title-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .call-to-action-inner .call-to-title-wrapper p {
   font-weight: 550;
   font-family: "Montserrat", sans-serif;
@@ -1857,4 +2036,10 @@ footer .footer-bottom p {
   font-size: 16px;
   font-weight: 550;
   color: #2459a8;
+  width: 250px;
+}
+@media (max-width: 1250px) {
+  .call-to-action-inner .call-to-title-wrapper .call-button {
+    margin-left: 0;
+  }
 }

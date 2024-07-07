@@ -17,7 +17,6 @@
 .head-font {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -32,7 +31,6 @@
 .head-font-secondary {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   color: #fff;
 }
 @media (max-width: 994px) {
@@ -72,13 +70,62 @@
   width: auto;
   padding: 1rem 0;
 }
+.header nav .nav-menu {
+  position: relative;
+}
 .header nav .nav-menu ul li {
   display: inline-block;
+}
+.header nav .nav-menu ul li.submenu:hover .sub-menu-list {
+  opacity: 1;
+  visibility: visible;
+}
+.header nav .nav-menu ul li.submenu .sub-menu-list {
+  position: absolute;
+  z-index: 1212;
+  left: -350px;
+  right: 0;
+  background: #fff;
+  margin-top: 1.3rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 4px 7px #cccccc5c;
+}
+.header nav .nav-menu ul li.submenu .sub-menu-list ul {
+  padding-left: 0;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.header nav .nav-menu ul li.submenu .sub-menu-list ul li {
+  border: 0.1px solid #f0efef;
+  border-top: none;
+  border-left: none;
+  padding: 2rem 1rem;
+}
+.header nav .nav-menu ul li.submenu .sub-menu-list ul li .mega-list {
+  display: flex;
+  flex-direction: column;
+}
+.header nav .nav-menu ul li.submenu .sub-menu-list ul li .mega-list h3 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.header nav .nav-menu ul li.submenu .sub-menu-list ul li .mega-list a {
+  padding: 0;
+  font-size: 14px;
+  margin-bottom: 0.3rem;
 }
 .header nav .nav-menu ul li a {
   padding: 0 0.9rem;
   text-decoration: none;
   color: #232323;
+}
+.header nav .nav-menu ul li a .sub-services {
+  position: absolute;
 }
 @media (max-width: 990px) {
   .header nav .nav-menu ul li {
@@ -223,7 +270,7 @@
   top: -160px;
   bottom: 0;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1500px) {
   .banner .banner-elements {
     right: -570px;
   }
@@ -249,25 +296,25 @@
 .banner .banner-main-image img {
   max-height: 720px;
 }
-@media (max-width: 1366px) {
+@media (max-width: 1500px) {
   .banner .banner-main-image img {
     max-height: 600px;
   }
 }
 .service-box-main {
   background: #f6f8fc;
-  padding: 3rem 0;
+  padding: 5rem 0;
   padding-bottom: 1rem;
 }
 .service-box-main .service-head h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 2rem;
 }
 @media (max-width: 994px) {
   .service-box-main .service-head h2 {
@@ -292,12 +339,58 @@
   margin: 0.5rem;
   background: #ffffff;
   padding: 1rem;
-  position: relative;
   margin-bottom: 2rem;
   padding-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.service-box-main .service-box .sv-hover-body {
+  width: 100%;
+  height: 0%;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -12;
+  transition: 0.5s;
+}
+.service-box-main .service-box .sv-hover-pattern {
+  position: absolute;
+  right: -320px;
+  transition: 0.5s;
+  bottom: -50px;
+  opacity: 0.6;
+}
+.service-box-main .service-box:hover .sv-hover-pattern {
+  right: -160px;
+}
+.service-box-main .service-box:hover .sv-hover-body {
+  height: 100%;
+}
+.service-box-main .service-box:hover p {
+  color: #fff;
+  transition: 1s;
+}
+.service-box-main .service-box:hover .app-icons::before {
+  transform: rotate(292deg);
+}
+.service-box-main .service-box:hover h5 {
+  color: #fff;
+  transition: 1s;
+}
+.service-box-main .service-box:hover a {
+  color: #fff;
+}
+.service-box-main .service-box:hover a .arrow-icon {
+  opacity: 1;
+  visibility: visible;
+  margin-left: 0px;
+  transition: 0.1;
 }
 .service-box-main .service-box p {
   font-size: 14px;
+  transition: 1s;
 }
 .service-box-main .service-box .app-icons {
   margin: 1rem 0;
@@ -314,20 +407,28 @@
   top: -5px;
   z-index: -1;
   background-image: url("../images/icons-shape.svg");
+  transition: 1s;
 }
 .service-box-main .service-box .app-icons img {
   z-index: 2112;
-  margin-left: 52px;
+  margin-left: 42px;
   margin-top: 16px;
 }
 .service-box-main .service-box a {
   text-decoration: none;
   color: #232323;
 }
+.service-box-main .service-box a .arrow-icon {
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 20px;
+  transition: 0.5s;
+}
 .service-box-main .service-box h5 {
   margin-bottom: 1rem;
   font-size: 18px;
   max-width: 220px;
+  transition: 1s;
 }
 .about-us {
   padding: 110px;
@@ -369,6 +470,7 @@
   z-index: -1;
   top: -2rem;
   right: 8rem;
+  animation: moverlefttoright 6s ease-out infinite;
 }
 .about-us .about-us-wrapper .about-img .main-img img {
   height: 32rem;
@@ -382,6 +484,7 @@
   position: absolute;
   right: 6rem;
   bottom: -4rem;
+  animation: mover 6s ease-out infinite;
 }
 .about-us .about-us-wrapper .about-img img::after {
   content: "";
@@ -407,7 +510,6 @@
 .about-us .about-us-wrapper .about-content h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -474,7 +576,6 @@
 .caseStudies .title-row h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -647,7 +748,6 @@
 .our-client-says .our-client-wrapper .client-title h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -940,7 +1040,6 @@
   margin-bottom: 2rem;
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1065,7 +1164,7 @@ footer .footer-bottom p {
   padding-left: 100px;
   margin-left: 20px;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #0136A4;
+  -webkit-text-stroke: 1px #0136a4;
   transition: 0.5s;
 }
 .marquees .mySwiperMar .swiper-slide h4.marquee-title:hover {
@@ -1131,7 +1230,7 @@ footer .footer-bottom p {
   font-family: "Montserrat", sans-serif;
 }
 .breadcrumbs {
-  background: #F6F8FC;
+  background: #f6f8fc;
   height: 50px;
   display: flex;
   align-items: center;
@@ -1155,7 +1254,6 @@ footer .footer-bottom p {
 .about-inner .about-wrapper .abt-inner-content h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1169,7 +1267,7 @@ footer .footer-bottom p {
   }
 }
 .core-values .main-box {
-  padding: 0  5rem;
+  padding: 0 5rem;
   padding-bottom: 4rem;
   margin: 3rem 0;
   background: #0040b9;
@@ -1185,7 +1283,6 @@ footer .footer-bottom p {
 .core-values .main-box .title h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   color: #fff;
 }
 @media (max-width: 994px) {
@@ -1200,7 +1297,7 @@ footer .footer-bottom p {
   gap: 1rem;
 }
 .core-values .main-box .cards-wrapper .cards {
-  background: #023AA2;
+  background: #023aa2;
   padding: 1rem;
 }
 .core-values .main-box .cards-wrapper .cards .icon img {
@@ -1217,19 +1314,18 @@ footer .footer-bottom p {
   margin-top: 1rem;
 }
 .core-values .main-box .single-card .cards {
-  background: #023AA2;
+  background: #023aa2;
   padding: 2rem;
 }
 .what-we-do {
   padding: 3rem 0;
 }
 .what-we-do .title {
-  padding: 1rem 0 ;
+  padding: 1rem 0;
 }
 .what-we-do .title h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1250,7 +1346,6 @@ footer .footer-bottom p {
 .what-we-do .tab-content .tab-content-wrapper .tab-content h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -1297,7 +1392,6 @@ footer .footer-bottom p {
 .overview .frequently-qstn-wrapper .frequently-askin-qstn .qstn-title h2 {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;

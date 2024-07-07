@@ -1,4 +1,5 @@
 //Application  Banner
+
 .applications-banner {
   height: 280px;
   width: 100%;
@@ -34,6 +35,10 @@
       position: absolute;
       left: 300px;
       animation: rotateme 20s linear infinite;
+
+      @media (max-width: 1140px) {
+        left: 103px;
+      }
     }
 
     .banner-shape-2 {
@@ -96,10 +101,10 @@
     }
   }
 }
-
 /// Description
 
 .description-main {
+  margin-bottom: 7rem;
   .description-wrapper {
     .primary-bg();
     padding: 6rem;
@@ -135,8 +140,7 @@
 /// Development Expertise
 
 .development-expertise {
-  padding: 2rem 0;
-  margin: 4rem 0 4rem 0;
+  margin-bottom: 8rem;
 
   .title {
     margin-bottom: 3rem;
@@ -154,7 +158,9 @@
   .development-cards-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    @media (max-width: 990px) {
+      grid-template-columns: 1fr;
+    }
     .development-cards {
       position: relative;
       overflow: hidden;
@@ -192,6 +198,9 @@
       padding: 2rem 2rem 4rem 2rem;
       transition: 0.5s;
       position: relative;
+      &:nth-child(even) {
+        border-left: none;
+      }
 
       .ios-blue-body {
         width: 100%;
@@ -256,12 +265,11 @@
     padding: 1rem 2rem;
     border-radius: 25px;
     padding-bottom: 8rem;
-    margin: 8rem 0;
+    margin: 10rem 0 8rem;
 
     .title {
       padding: 3rem 0;
-      // display: grid;
-      // grid-template-columns: 1fr 2fr;
+
       text-align: center;
 
       h3 {
@@ -277,7 +285,13 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 4rem;
+      @media (max-width: 1170px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
+      @media (max-width: 624px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
       .development-Process-box {
         color: #fff;
         text-align: center;
@@ -296,6 +310,10 @@
           top: 73px;
           background: url(../images/porcess-shape-white.png);
           background-repeat: no-repeat;
+
+          @media (max-width: 1460px) {
+            display: none;
+          }
         }
 
         &:first-child {
@@ -355,13 +373,13 @@
 //   Why choose inner
 
 .why-choose-insasoft-service {
-  margin: 6rem 0 4rem 0;
+  margin: 8rem 0 8rem 0;
   position: relative;
 
   .why-choose-element {
     position: absolute;
     right: 0;
-    top: -95px;
+    top: -129px;
     transform: rotate(180deg);
   }
 
@@ -370,23 +388,27 @@
     grid-template-columns: 1fr 2fr;
     align-items: center;
     gap: 2rem;
-
-    .why-choose-box-sv{
-        position: relative;
-        .why-choose-img {
-            animation: mover 6s ease-out infinite;
-          }
-          .why-choose-img-element {
-            position: absolute;
-            right: -20px;
-            bottom: -20px;
-            
-            img{
-                height: 4rem;
-            }
-          }
+    @media (max-width: 1170px) {
+      grid-template-columns: 1fr;
     }
-    
+    .why-choose-box-sv {
+      position: relative;
+      .why-choose-img {
+        animation: mover 6s ease-out infinite;
+      }
+      .why-choose-img-element {
+        position: absolute;
+        right: -20px;
+        bottom: -20px;
+        @media (max-width: 1170px) {
+          right: 0;
+        }
+        img {
+          height: 4rem;
+        }
+      }
+    }
+
     .why-choose-content {
       h3 {
         .head-font();
@@ -407,6 +429,10 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 
+    @media (max-width: 1250px) {
+      grid-template-columns: 1fr;
+    }
+
     p {
       font-weight: 550;
       font-family: "Montserrat", sans-serif;
@@ -426,6 +452,10 @@
       font-size: 16px;
       font-weight: 550;
       color: #2459a8;
+      width: 250px;
+      @media (max-width: 1250px) {
+        margin-left: 0;
+      }
     }
   }
 }

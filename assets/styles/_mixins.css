@@ -16,7 +16,6 @@
 .head-font {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
   -webkit-background-clip: text;
@@ -31,7 +30,6 @@
 .head-font-secondary {
   font-weight: 750;
   font-size: 32px;
-  padding: 1rem 0;
   color: #fff;
 }
 @media (max-width: 994px) {

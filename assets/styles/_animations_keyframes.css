@@ -48,12 +48,12 @@
 }
 @keyframes moverlefttoright {
   0% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   50% {
-    transform: translateY(-30px);
+    transform: translateX(-30px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
