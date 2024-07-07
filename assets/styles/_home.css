@@ -916,8 +916,7 @@
   place-items: center;
 }
 .frequently-qstn .frequently-qstn-wrapper .frequently-qstn-img {
-  -webkit-animation: breathing 5s ease-out infinite normal;
-  animation: breathing 5s ease-out infinite normal;
+  animation: breathing 4s ease-out infinite;
 }
 @media (max-width: 990px) {
   .frequently-qstn .frequently-qstn-wrapper {
