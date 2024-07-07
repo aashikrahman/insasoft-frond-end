@@ -20,7 +20,7 @@ p {
 a {
   color: #2459A8;
   font-family: "Montserrat", sans-serif;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 a:hover {
   text-decoration: none;
@@ -785,6 +785,10 @@ input:-webkit-autofill:active {
   position: relative;
   overflow: hidden;
 }
+.our-client-says.backgound {
+  background: #f9fafd;
+  z-index: 1;
+}
 .our-client-says .testi-element {
   width: 200px;
   height: 200px;
@@ -913,7 +917,6 @@ input:-webkit-autofill:active {
   background: #dbdbdb;
   display: block;
   position: absolute;
-  left: 0;
   margin-right: -100px;
   top: 0;
 }
@@ -1560,13 +1563,44 @@ footer .footer-bottom p {
   font-size: 16px;
 }
 .applications-banner {
-  height: 250px;
+  height: 280px;
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
+}
+.applications-banner .shapes {
+  width: 100%;
+  position: relative;
+}
+.applications-banner .shapes .banner-shape-3-r {
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+.applications-banner .shapes .banner-shape-3-r img {
+  height: 2rem;
+}
+.applications-banner .shapes .banner-shape-4-r {
+  position: absolute;
+  right: 200px;
+  top: 120px;
+  animation: rotateme 20s linear infinite;
+}
+.applications-banner .shapes .banner-shape-1 {
+  position: absolute;
+  left: 300px;
+  animation: rotateme 20s linear infinite;
+}
+.applications-banner .shapes .banner-shape-2 {
+  position: absolute;
+  left: 0;
+  bottom: -210px;
+}
+.applications-banner .shapes .banner-shape-2 img {
+  height: 3rem;
 }
 .applications-banner .application-wrapper {
   text-align: center;
@@ -1596,7 +1630,6 @@ footer .footer-bottom p {
 .applications-banner .application-wrapper .bread-crubs {
   position: absolute;
   bottom: 0;
-  margin-bottom: 1rem;
 }
 .applications-banner .application-wrapper .bread-crubs ul li {
   list-style: none;
@@ -1628,7 +1661,7 @@ footer .footer-bottom p {
 }
 .development-expertise {
   padding: 2rem 0;
-  margin-top: 4rem;
+  margin: 4rem 0 4rem 0;
 }
 .development-expertise .title {
   margin-bottom: 3rem;
@@ -1655,12 +1688,9 @@ footer .footer-bottom p {
 .development-expertise .development-cards-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
 }
 .development-expertise .development-cards-wrapper .development-cards {
-  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.16);
-  -webkit-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.16);
+  border: 1px solid #e5e5e5;
   padding: 2rem 2rem 4rem 2rem;
 }
 .development-expertise .development-cards-wrapper .development-cards h3 {
@@ -1684,17 +1714,40 @@ footer .footer-bottom p {
   line-height: 1.5rem;
 }
 .development-Process {
-  padding: 4rem 0;
+  margin: 2rem 0 4rem 0;
+}
+.development-Process .development-Process-box-main {
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
-  margin-top: 5rem;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  padding-bottom: 8rem;
+  margin: 8rem 0;
 }
-.development-Process .development-Process-wrapper {
+.development-Process .development-Process-box-main .title {
+  padding: 3rem 0;
+  text-align: center;
+}
+.development-Process .development-Process-box-main .title h3 {
+  font-weight: 750;
+  font-size: 32px;
+  padding: 1rem 0;
+  color: #fff;
+}
+@media (max-width: 994px) {
+  .development-Process .development-Process-box-main .title h3 {
+    font-size: 22px;
+  }
+}
+.development-Process .development-Process-box-main .title p {
+  color: #fff;
+}
+.development-Process .development-Process-box-main .development-Process-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
 }
-.development-Process .development-Process-wrapper .development-Process-box {
+.development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box {
   color: #fff;
   text-align: center;
   display: flex;
@@ -1703,7 +1756,7 @@ footer .footer-bottom p {
   flex-direction: column;
   position: relative;
 }
-.development-Process .development-Process-wrapper .development-Process-box::after {
+.development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -1713,38 +1766,95 @@ footer .footer-bottom p {
   background: url(../images/porcess-shape-white.png);
   background-repeat: no-repeat;
 }
-.development-Process .development-Process-wrapper .development-Process-box:first-child::after {
+.development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box:first-child::after {
   display: none;
 }
-.development-Process .development-Process-wrapper .development-Process-box .process-thumb {
+.development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box .process-thumb {
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 180px;
   background: #0c5adb;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
-.development-Process .development-Process-wrapper .development-Process-box .process-thumb img {
+.development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box .process-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.development-Process .development-Process-wrapper .development-Process-box .process-thumb::before {
+.development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box .process-thumb::before {
   position: absolute;
   content: "";
-  width: 244px;
-  height: 244px;
-  left: -13px;
-  top: -13px;
-  border: 2px dashed #0c5adb;
+  width: 200px;
+  height: 200px;
+  left: -10px;
+  top: -10px;
+  border: 2px dashed #ffffff;
   border-radius: 50%;
   animation: rotateme 20s linear infinite;
 }
-.development-Process .development-Process-wrapper .development-Process-box h3 {
+.development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box h3 {
   padding: 1rem 0;
   font-weight: 550;
+  font-size: 16px;
 }
-.development-Process .development-Process-wrapper .development-Process-box p {
-  font-size: 12px;
+.development-Process .development-Process-box-main .development-Process-wrapper .development-Process-box p {
+  font-size: 14px;
   color: #ffffff;
+  display: none;
+}
+.why-choose-insasoft-service {
+  margin: 6rem 0 4rem 0;
+}
+.why-choose-insasoft-service .why-choose-insasoft-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2rem;
+}
+.why-choose-insasoft-service .why-choose-insasoft-wrapper .why-choose-content h3 {
+  font-weight: 750;
+  font-size: 32px;
+  padding: 1rem 0;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 994px) {
+  .why-choose-insasoft-service .why-choose-insasoft-wrapper .why-choose-content h3 {
+    font-size: 22px;
+  }
+}
+.call-to-action-inner {
+  background: #f9fafd;
+  height: 170px;
+  color: #3d3d3d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.call-to-action-inner .call-to-title-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.call-to-action-inner .call-to-title-wrapper p {
+  font-weight: 550;
+  font-family: "Montserrat", sans-serif;
+}
+.call-to-action-inner .call-to-title-wrapper .call-button {
+  position: relative;
+  display: inline-block;
+  margin: 0 1em;
+  padding: 0.6em 1em;
+  border: 3px solid #2459a8;
+  border-radius: 30px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  background: none;
+  font-size: 16px;
+  font-weight: 550;
+  color: #2459a8;
 }

@@ -1,12 +1,54 @@
 //Application  Banner
 .applications-banner {
-    height: 250px;
+    height: 280px;
     width: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
+
+    //   background: rgb(253, 237, 237);
+    .shapes {
+
+        width: 100%;
+        position: relative;
+
+        .banner-shape-3-r {
+            position: absolute;
+            right: 0;
+            top: -50px;
+
+            img {
+                height: 2rem;
+            }
+        }
+
+        .banner-shape-4-r {
+            position: absolute;
+            right: 200px;
+            top: 120px;
+            animation: rotateme 20s linear infinite;
+        }
+
+        .banner-shape-1 {
+            position: absolute;
+            left: 300px;
+            animation: rotateme 20s linear infinite;
+
+        }
+
+        .banner-shape-2 {
+            position: absolute;
+            left: 0;
+            bottom: -210px;
+            animation: mover 20s infinite;
+
+            img {
+                height: 3rem;
+            }
+        }
+    }
 
     .application-wrapper {
         text-align: center;
@@ -26,14 +68,32 @@
         .bread-crubs {
             position: absolute;
             bottom: 0;
-            margin-bottom: 1rem;
+
+
 
             ul {
                 li {
                     list-style: none;
                     display: inline;
-                    margin-right: 1rem;
+
                     text-align: center;
+
+                    &::after {
+                        content: "/";
+                        font-weight: 550px;
+                        color: #0D093E;
+                        margin-left: 2px;
+                        font-family: @primary-font;
+
+
+                    }
+
+
+                    &:last-child {
+                        &::after {
+                            display: none;
+                        }
+                    }
 
                     a {
                         font-weight: 550;
@@ -88,7 +148,6 @@
         p {
             font-weight: 550;
             line-height: 20px;
-
         }
     }
 
@@ -99,20 +158,37 @@
         //   gap: 1rem;
 
         .development-cards {
-            // box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.16);
-            // -webkit-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.16);
-            // -moz-box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.16);
+      
             border: 1px solid #e5e5e5;
             padding: 2rem 2rem 4rem 2rem;
 
+            transition: 1s;
+
             h3 {
-                .head-font();
+                font-weight: 750;
                 font-size: 22px;
+                color: #2459a8;
+                font-family: @primary-font;
+                margin-bottom: 1rem;
+
             }
 
             p {
                 font-size: 16px;
                 line-height: 1.5rem;
+            }
+
+            &:hover {
+                .primary-bg();
+                transition: 1s;
+
+                p {
+                    color: #fff !important;
+                }
+
+                h3 {
+                    color: #fff;
+                }
             }
         }
     }
@@ -121,29 +197,35 @@
 //Development Porcess
 
 .development-Process {
-    padding: 4rem 0;
-
     margin: 2rem 0 4rem 0;
-    .development-Process-box-main{
-        .title{
-            padding: 2rem 0 4rem 0;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            h3{
+
+    .development-Process-box-main {
+        .primary-bg();
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        padding-bottom: 8rem;
+        margin: 8rem 0;
+
+        .title {
+            padding: 3rem 0;
+            // display: grid;
+            // grid-template-columns: 1fr 2fr;
+            text-align: center;
+
+            h3 {
                 .head-font-secondary();
             }
-            p{
+
+            p {
                 color: #fff;
             }
         }
-        .primary-bg();
-        padding: 3rem 2rem;
-        border-radius: 25px;
+
         .development-Process-wrapper {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 4rem;
-    
+
             .development-Process-box {
                 color: #fff;
                 text-align: center;
@@ -152,8 +234,7 @@
                 justify-content: center;
                 flex-direction: column;
                 position: relative;
-    
-    
+
                 &::after {
                     position: absolute;
                     content: "";
@@ -163,35 +244,32 @@
                     top: 73px;
                     background: url(../images/porcess-shape-white.png);
                     background-repeat: no-repeat;
-    
-    
                 }
-    
+
                 &:first-child {
                     &::after {
                         display: none;
                     }
                 }
-    
+
                 &:nth-child(3) {
                     &::after {}
                 }
-    
+
                 .process-thumb {
-    
                     position: relative;
                     width: 180px;
                     height: 180px;
                     background: #0c5adb;
                     border-radius: 50%;
                     margin-bottom: 1rem;
-    
+
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                     }
-    
+
                     &::before {
                         position: absolute;
                         content: "";
@@ -199,27 +277,27 @@
                         height: 200px;
                         left: -10px;
                         top: -10px;
-                        border: 2px dashed #0c5adb;
+                        border: 2px dashed #ffffff;
                         border-radius: 50%;
                         animation: rotateme 20s linear infinite;
                     }
                 }
-    
+
                 h3 {
                     padding: 1rem 0;
                     font-weight: 550;
+                    font-size: 16px;
                 }
-    
+
                 p {
                     font-size: 14px;
                     color: #ffffff;
+                    display: none;
                 }
             }
         }
     }
-    
 }
-
 
 //   Why choose inner
 
@@ -232,10 +310,45 @@
         align-items: center;
         gap: 2rem;
 
-        .why-choose-content{
-            h3{
+        .why-choose-content {
+            h3 {
                 .head-font();
             }
+        }
+    }
+}
+
+.call-to-action-inner {
+    background: #f9fafd;
+    height: 170px;
+    color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .call-to-title-wrapper {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+
+        p {
+            font-weight: 550;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .call-button {
+            position: relative;
+            display: inline-block;
+            margin: 0 1em;
+            padding: 0.6em 1em;
+            border: 3px solid #2459a8;
+            border-radius: 30px;
+            text-align: center;
+            white-space: nowrap;
+            cursor: pointer;
+            background: none;
+            font-size: 16px;
+            font-weight: 550;
+            color: #2459a8;
         }
     }
 }
