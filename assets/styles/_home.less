@@ -1612,3 +1612,103 @@ footer {
     }
   }
 }
+
+// Our stories
+
+.our-story-abt{
+   .our-stories-wrapper{
+    background: #f6f8fc;
+    padding: 3rem;
+    margin: 6rem 0;
+    border-radius: 20px;
+    
+     .stories-head{
+      h3{
+        .head-font();
+      }
+     }
+   }
+}
+
+// Why choose content
+
+
+.why-choose-inner{
+  padding: 4rem 0;
+  .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+    .why-choose-content{
+    
+   
+      max-width: 65%;
+      background: #fff;
+      padding: 3rem;
+      margin: 6rem 0;
+      border-radius: 20px;
+      box-shadow: 0 4px 7px #cccccc5c;
+     
+      .why-choose-title{
+        margin-bottom: 1rem;
+        h3{
+          .head-font();
+        }
+      }
+    }
+    .why-choose-img{
+      max-width: 60%;
+      height: 600px;
+      position: relative;
+      left: -20px;
+      z-index: -1;
+      
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+
+
+.what-we-do-abt{
+  padding: 4rem 0;
+  margin: 2rem 0 0;
+  background: #f6f8fc;
+
+  .title{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
+    h3{
+      .head-font();
+    }
+  }
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    .what-do-card{
+      background: #fff;
+      padding: 1rem;
+
+      h3{
+        font-size: 22px;
+        color: #0140B7;
+        font-family: @primary-font;
+      }
+
+      &.last{
+        grid-column: 1 / span 2;
+        
+      }
+    }
+    
+  }
+}

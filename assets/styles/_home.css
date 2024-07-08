@@ -1479,3 +1479,111 @@ footer .footer-bottom p {
   font-weight: 550;
   font-size: 16px;
 }
+.our-story-abt .our-stories-wrapper {
+  background: #f6f8fc;
+  padding: 3rem;
+  margin: 6rem 0;
+  border-radius: 20px;
+}
+.our-story-abt .our-stories-wrapper .stories-head h3 {
+  font-weight: 750;
+  font-size: 32px;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 994px) {
+  .our-story-abt .our-stories-wrapper .stories-head h3 {
+    font-size: 22px;
+  }
+}
+.why-choose-inner {
+  padding: 4rem 0;
+}
+.why-choose-inner .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.why-choose-inner .wrapper .why-choose-content {
+  max-width: 65%;
+  background: #fff;
+  padding: 3rem;
+  margin: 6rem 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 7px #cccccc5c;
+}
+.why-choose-inner .wrapper .why-choose-content .why-choose-title {
+  margin-bottom: 1rem;
+}
+.why-choose-inner .wrapper .why-choose-content .why-choose-title h3 {
+  font-weight: 750;
+  font-size: 32px;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 994px) {
+  .why-choose-inner .wrapper .why-choose-content .why-choose-title h3 {
+    font-size: 22px;
+  }
+}
+.why-choose-inner .wrapper .why-choose-img {
+  max-width: 60%;
+  height: 600px;
+  position: relative;
+  left: -20px;
+  z-index: -1;
+}
+.why-choose-inner .wrapper .why-choose-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.what-we-do-abt {
+  padding: 4rem 0;
+  margin: 2rem 0 0;
+  background: #f6f8fc;
+}
+.what-we-do-abt .title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 4rem;
+}
+.what-we-do-abt .title h3 {
+  font-weight: 750;
+  font-size: 32px;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 994px) {
+  .what-we-do-abt .title h3 {
+    font-size: 22px;
+  }
+}
+.what-we-do-abt .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.what-we-do-abt .wrapper .what-do-card {
+  background: #fff;
+  padding: 1rem;
+}
+.what-we-do-abt .wrapper .what-do-card h3 {
+  font-size: 22px;
+  color: #0140B7;
+  font-family: "Montserrat", sans-serif;
+}
+.what-we-do-abt .wrapper .what-do-card.last {
+  grid-column: 1 / span 2;
+}
