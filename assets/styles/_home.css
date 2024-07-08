@@ -1690,3 +1690,71 @@ footer .footer-bottom p {
 .calltoActionAbt .cta-swiper-main-box {
   margin-bottom: 3rem;
 }
+.team-page {
+  padding: 3rem 0;
+  margin: 4rem 0;
+}
+.team-page .headerWrapper {
+  max-width: 1286px;
+  margin: 0 auto;
+}
+.team-page .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  position: relative;
+}
+.team-page .wrapper .team-card .team-info {
+  padding: 1rem 0;
+}
+.team-page .wrapper .team-card .team-info .name-and-btn {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.team-page .wrapper .team-card .team-info .name-and-btn button {
+  background: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  position: absolute;
+  right: 0;
+}
+.team-page .wrapper .team-card .team-info h3 {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.team-page .wrapper .team-card .team-info h4 {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+.team-page .wrapper .team-card .team-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  background: #0041b938;
+  transition: 1s;
+  border-radius: 10px;
+  display: block;
+}
+.team-page .wrapper .team-card .team-details .team-details-content {
+  padding: 3rem;
+}
+.team-page .wrapper .team-card .team-details .team-details-content .data-info .name-and-designation {
+  margin-bottom: 3rem;
+}
+.team-page .wrapper .team-card .team-details .team-details-content .data-info .name-and-designation h3 {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+.team-page .wrapper .team-card .team-details .team-details-content .data-info .name-and-designation h4 {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}

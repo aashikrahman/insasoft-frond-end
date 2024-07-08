@@ -1679,7 +1679,7 @@ footer {
         position: absolute;
         right: 0;
         top: -20px;
-        @media(max-width: 1180px){
+        @media (max-width: 1180px) {
           display: none;
         }
       }
@@ -1688,8 +1688,6 @@ footer {
         left: 0;
         bottom: 0;
         animation: moverlefttoright 6s ease-out infinite;
-
-       
       }
     }
     .why-choose-img {
@@ -1722,15 +1720,15 @@ footer {
   background: #f6f8fc;
   position: relative;
   overflow: hidden;
-.what-wedo-rounded{
-  width: 200px;
-  height: 200px;
-  background: #0040b9;
-  border-radius: 50%;
-  position: absolute;
-  right: -80px;
-  top: -100px;
-}
+  .what-wedo-rounded {
+    width: 200px;
+    height: 200px;
+    background: #0040b9;
+    border-radius: 50%;
+    position: absolute;
+    right: -80px;
+    top: -100px;
+  }
   .title {
     display: grid;
 
@@ -1791,5 +1789,80 @@ footer {
 .calltoActionAbt {
   .cta-swiper-main-box {
     margin-bottom: 3rem;
+  }
+}
+
+//teams
+
+.team-page {
+  padding: 3rem 0;
+  margin: 4rem 0;
+  .headerWrapper {
+    max-width: 1286px;
+    margin: 0 auto;
+}
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    position: relative;
+    .team-card {
+      .team-info {
+        padding: 1rem 0;
+        .name-and-btn{
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          button{
+            background: none;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            .primary-bg();
+            position: absolute;
+            right: 0;
+          }
+        }
+        h3{
+          font-size: 22px;
+          font-family: @primary-font;
+        }
+        h4{
+          font-size: 18px;
+          font-family: @primary-font;
+        }
+      }
+      .team-details {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0;
+        background: #0041b938;
+        transition: 1s;
+        border-radius: 10px;
+        display: block;
+        .team-details-content{
+          padding: 3rem;
+
+          .data-info{
+            .name-and-designation{
+              h3{
+                font-size: 22px;
+                font-family: @primary-font;
+              }
+              h4{
+                font-size: 18px;
+                font-family: @primary-font;
+              }
+              margin-bottom: 3rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
