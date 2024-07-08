@@ -995,7 +995,7 @@
     grid-template-columns: 0.5fr 1fr;
     column-gap: 8rem;
     place-items: center;
-
+   
     .frequently-qstn-img {
       animation: breathing 4s ease-out infinite;
     }
@@ -1388,7 +1388,9 @@ footer {
     border-radius: 2rem;
     color: #fff;
     font-family: @primary-font;
-
+    @media(max-width:1180px){
+      margin-bottom: 1rem;
+    }
     .title {
       text-align: center;
       padding: 3rem 0;
@@ -1403,7 +1405,9 @@ footer {
       grid-template-columns: 1fr 1fr;
       grid-row-end: 4fr;
       gap: 1rem;
-
+      @media(max-width:940px){
+        grid-template-columns: 1fr;
+      }
       .cards {
         background: #023aa2;
         padding: 1rem;
@@ -1621,7 +1625,9 @@ footer {
     padding: 3rem;
     margin: 6rem 0;
     border-radius: 20px;
-    
+    @media(max-width:1180px){
+      margin: 0;
+    }
      .stories-head{
       h3{
         .head-font();
@@ -1635,22 +1641,34 @@ footer {
 
 .why-choose-inner{
   padding: 4rem 0;
+  @media(max-width:1180px){
+
+    padding: 1rem;
+    
+  }
   .wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     
+    @media(max-width:1180px){
+      flex-direction: column;
+    }
     .why-choose-content{
-    
-   
+  
       max-width: 65%;
       background: #fff;
       padding: 3rem;
       margin: 6rem 0;
       border-radius: 20px;
       box-shadow: 0 4px 7px #cccccc5c;
-     
+      @media(max-width:1180px){
+        max-width: 100%;
+        padding: 1.6rem;
+        margin: 0;
+        margin-bottom: 2rem;
+      }
       .why-choose-title{
         margin-bottom: 1rem;
         h3{
@@ -1664,6 +1682,12 @@ footer {
       position: relative;
       left: -20px;
       z-index: -1;
+
+      @media(max-width:1180px){
+        max-width: 100%;
+        position: static;
+        left: 0;
+      }
       
       img{
         width: 100%;
@@ -1694,6 +1718,10 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    @media(max-width:1180px){
+      grid-template-columns: 1fr;
+    }
+    
     .what-do-card{
       background: #fff;
       padding: 1rem;
@@ -1706,9 +1734,18 @@ footer {
 
       &.last{
         grid-column: 1 / span 2;
-        
+        @media(max-width:1180px){
+          grid-column: 1 / span 1;
+        }
       }
     }
     
+  }
+}
+
+
+.calltoActionAbt{
+  .cta-swiper-main-box{
+    margin-bottom: 3rem;
   }
 }

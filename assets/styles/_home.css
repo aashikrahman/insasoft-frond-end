@@ -1276,6 +1276,11 @@ footer .footer-bottom p {
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
+@media (max-width: 1180px) {
+  .core-values .main-box {
+    margin-bottom: 1rem;
+  }
+}
 .core-values .main-box .title {
   text-align: center;
   padding: 3rem 0;
@@ -1295,6 +1300,11 @@ footer .footer-bottom p {
   grid-template-columns: 1fr 1fr;
   grid-row-end: 4fr;
   gap: 1rem;
+}
+@media (max-width: 940px) {
+  .core-values .main-box .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 .core-values .main-box .cards-wrapper .cards {
   background: #023aa2;
@@ -1485,6 +1495,11 @@ footer .footer-bottom p {
   margin: 6rem 0;
   border-radius: 20px;
 }
+@media (max-width: 1180px) {
+  .our-story-abt .our-stories-wrapper {
+    margin: 0;
+  }
+}
 .our-story-abt .our-stories-wrapper .stories-head h3 {
   font-weight: 750;
   font-size: 32px;
@@ -1502,11 +1517,21 @@ footer .footer-bottom p {
 .why-choose-inner {
   padding: 4rem 0;
 }
+@media (max-width: 1180px) {
+  .why-choose-inner {
+    padding: 1rem;
+  }
+}
 .why-choose-inner .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
+}
+@media (max-width: 1180px) {
+  .why-choose-inner .wrapper {
+    flex-direction: column;
+  }
 }
 .why-choose-inner .wrapper .why-choose-content {
   max-width: 65%;
@@ -1515,6 +1540,14 @@ footer .footer-bottom p {
   margin: 6rem 0;
   border-radius: 20px;
   box-shadow: 0 4px 7px #cccccc5c;
+}
+@media (max-width: 1180px) {
+  .why-choose-inner .wrapper .why-choose-content {
+    max-width: 100%;
+    padding: 1.6rem;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
 }
 .why-choose-inner .wrapper .why-choose-content .why-choose-title {
   margin-bottom: 1rem;
@@ -1539,6 +1572,13 @@ footer .footer-bottom p {
   position: relative;
   left: -20px;
   z-index: -1;
+}
+@media (max-width: 1180px) {
+  .why-choose-inner .wrapper .why-choose-img {
+    max-width: 100%;
+    position: static;
+    left: 0;
+  }
 }
 .why-choose-inner .wrapper .why-choose-img img {
   width: 100%;
@@ -1575,6 +1615,11 @@ footer .footer-bottom p {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
+@media (max-width: 1180px) {
+  .what-we-do-abt .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .what-we-do-abt .wrapper .what-do-card {
   background: #fff;
   padding: 1rem;
@@ -1586,4 +1631,12 @@ footer .footer-bottom p {
 }
 .what-we-do-abt .wrapper .what-do-card.last {
   grid-column: 1 / span 2;
+}
+@media (max-width: 1180px) {
+  .what-we-do-abt .wrapper .what-do-card.last {
+    grid-column: 1 / span 1;
+  }
+}
+.calltoActionAbt .cta-swiper-main-box {
+  margin-bottom: 3rem;
 }
