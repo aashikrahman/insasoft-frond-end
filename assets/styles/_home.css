@@ -1269,16 +1269,18 @@ footer .footer-bottom p {
 .core-values .main-box {
   padding: 0 5rem;
   padding-bottom: 4rem;
-  margin: 3rem 0;
+  margin: 0 0 3rem 0;
   background: #0040b9;
   background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
-  border-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
 @media (max-width: 1180px) {
   .core-values .main-box {
     margin-bottom: 1rem;
+    padding: 0 1rem;
   }
 }
 .core-values .main-box .title {
@@ -1492,8 +1494,9 @@ footer .footer-bottom p {
 .our-story-abt .our-stories-wrapper {
   background: #f6f8fc;
   padding: 3rem;
-  margin: 6rem 0;
-  border-radius: 20px;
+  margin: 6rem 0 0;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 @media (max-width: 1180px) {
   .our-story-abt .our-stories-wrapper {
@@ -1566,12 +1569,29 @@ footer .footer-bottom p {
     font-size: 22px;
   }
 }
+.why-choose-inner .wrapper .why-choose-content .why-choose-shapes {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+@media (max-width: 1180px) {
+  .why-choose-inner .wrapper .why-choose-content .why-choose-shapes {
+    display: none;
+  }
+}
+.why-choose-inner .wrapper .why-choose-content .why-choose-shapes-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: moverlefttoright 6s ease-out infinite;
+}
 .why-choose-inner .wrapper .why-choose-img {
   max-width: 60%;
   height: 600px;
   position: relative;
   left: -20px;
   z-index: -1;
+  animation: mover 6s ease-out infinite;
 }
 @media (max-width: 1180px) {
   .why-choose-inner .wrapper .why-choose-img {
@@ -1590,11 +1610,22 @@ footer .footer-bottom p {
   padding: 4rem 0;
   margin: 2rem 0 0;
   background: #f6f8fc;
+  position: relative;
+  overflow: hidden;
+}
+.what-we-do-abt .what-wedo-rounded {
+  width: 200px;
+  height: 200px;
+  background: #0040b9;
+  border-radius: 50%;
+  position: absolute;
+  right: -80px;
+  top: -100px;
 }
 .what-we-do-abt .title {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  max-width: 800px;
 }
 .what-we-do-abt .title h3 {
   font-weight: 750;
@@ -1622,11 +1653,30 @@ footer .footer-bottom p {
 }
 .what-we-do-abt .wrapper .what-do-card {
   background: #fff;
-  padding: 1rem;
+  padding: 2rem 2rem;
+  transition: 0.5s;
+}
+.what-we-do-abt .wrapper .what-do-card:nth-child(odd) {
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  color: #fff;
+}
+.what-we-do-abt .wrapper .what-do-card:nth-child(odd) h3 {
+  color: #fff;
+}
+.what-we-do-abt .wrapper .what-do-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 7px #cccccc5c;
+}
+.what-we-do-abt .wrapper .what-do-card .what-we-do-thumbnails {
+  margin-bottom: 1rem;
+}
+.what-we-do-abt .wrapper .what-do-card .what-we-do-thumbnails img {
+  height: 3rem;
 }
 .what-we-do-abt .wrapper .what-do-card h3 {
   font-size: 22px;
-  color: #0140B7;
+  color: #0140b7;
   font-family: "Montserrat", sans-serif;
 }
 .what-we-do-abt .wrapper .what-do-card.last {
