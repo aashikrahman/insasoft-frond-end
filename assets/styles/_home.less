@@ -1919,7 +1919,7 @@ footer {
 
   .main-block {
     position: relative;
-   
+
     background: #f7f7f7;
     border-radius: 20px;
 
@@ -1933,15 +1933,13 @@ footer {
         width: 27.6%;
         border-right: 1px solid #ebeaea;
         display: block;
-        
+
         height: auto;
         max-height: auto;
-        min-height:  auto;
+        min-height: auto;
       }
-      
     }
     .case-studies-block {
-   
       .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -2054,6 +2052,109 @@ footer {
         .case-studeis-image {
         }
       }
+    }
+  }
+}
+
+//where-we-are Inner
+
+.where-we-are {
+  .contactus-main-block {
+    background: #f8f8f8;
+    padding: 3rem;
+    margin: 4rem 0;
+
+    @media (max-width: 730px) {
+      padding: 2rem 1rem;
+    }
+    .contact-us-wrapper {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 4rem;
+
+      @media (max-width: 1046px) {
+        grid-template-columns: 1fr;
+      }
+
+      .form-block {
+        .form-title {
+          h3 {
+            padding-bottom: 1rem;
+            display: block;
+            .head-font();
+          }
+        }
+        form {
+          .form-group {
+            margin-bottom: 1rem;
+            input {
+              height: 3rem;
+              border-radius: 0;
+              font-size: 14px;
+              border: 1px solid #ebebeb;
+            }
+            .form-control {
+              border-radius: 0;
+              border: 1px solid #ebebeb;
+            }
+          }
+          .submit-button {
+            margin-top: 3rem;
+            button {
+              padding: 0.5rem 3rem;
+              border: 1px solid #0040b9;
+              .primary-bg();
+              color: #fff;
+
+              &:hover {
+                background: #fff;
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+
+      .contact-address {
+        .contact-address-main-block {
+          h3 {
+            color: #fff;
+            .head-font-secondary();
+
+            @media (max-width: 1260px) {
+              font-size: 22px !important;
+            }
+          }
+        }
+        padding: 3rem;
+        .primary-bg();
+        border-radius: 24px;
+
+        @media(max-width:730px){
+          padding: 2rem 1rem;
+        }
+        ul {
+          margin-top: 2rem;
+          padding-left: 0;
+          li {
+            color: #fff;
+            margin-bottom: 1rem;
+            list-style: none;
+            a {
+              color: #fff;
+              font-size: 18px;
+            }
+            p {
+              margin-bottom: 0;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .contact-map {
+      margin: 3rem 0 0;
+      height: 450px;
     }
   }
 }
