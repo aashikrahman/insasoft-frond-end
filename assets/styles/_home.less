@@ -12,6 +12,7 @@
 
     .nav-menu {
       position: relative;
+
       ul {
         li {
           display: inline-block;
@@ -23,6 +24,7 @@
                 visibility: visible;
               }
             }
+
             .sub-menu-list {
               position: absolute;
               z-index: 1212;
@@ -36,6 +38,7 @@
               border-bottom-left-radius: 24px;
               border-bottom-right-radius: 24px;
               box-shadow: 0 4px 7px #cccccc5c;
+
               ul {
                 padding-left: 0;
                 margin-top: 2rem;
@@ -56,6 +59,7 @@
                       font-size: 18px;
                       margin-bottom: 1rem;
                     }
+
                     a {
                       padding: 0;
                       font-size: 14px;
@@ -66,6 +70,7 @@
               }
             }
           }
+
           a {
             padding: 0 0.9rem;
             text-decoration: none;
@@ -303,6 +308,7 @@
     padding-bottom: 3rem;
     position: relative;
     overflow: hidden;
+
     .sv-hover-body {
       width: 100%;
       height: 0%;
@@ -326,6 +332,7 @@
       .sv-hover-pattern {
         right: -160px;
       }
+
       .sv-hover-body {
         height: 100%;
       }
@@ -348,6 +355,7 @@
 
       a {
         color: #fff;
+
         .arrow-icon {
           opacity: 1;
           visibility: visible;
@@ -1390,10 +1398,12 @@ footer {
     border-bottom-right-radius: 2rem;
     color: #fff;
     font-family: @primary-font;
+
     @media (max-width: 1180px) {
       margin-bottom: 1rem;
       padding: 0 1rem;
     }
+
     .title {
       text-align: center;
       padding: 3rem 0;
@@ -1408,9 +1418,11 @@ footer {
       grid-template-columns: 1fr 1fr;
       grid-row-end: 4fr;
       gap: 1rem;
+
       @media (max-width: 940px) {
         grid-template-columns: 1fr;
       }
+
       .cards {
         background: #023aa2;
         padding: 1rem;
@@ -1629,9 +1641,11 @@ footer {
     margin: 6rem 0 0;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
+
     @media (max-width: 1180px) {
       margin: 0;
     }
+
     .stories-head {
       h3 {
         .head-font();
@@ -1644,9 +1658,11 @@ footer {
 
 .why-choose-inner {
   padding: 4rem 0;
+
   @media (max-width: 1180px) {
     padding: 1rem;
   }
+
   .wrapper {
     display: flex;
     align-items: center;
@@ -1656,6 +1672,7 @@ footer {
     @media (max-width: 1180px) {
       flex-direction: column;
     }
+
     .why-choose-content {
       max-width: 65%;
       background: #fff;
@@ -1663,26 +1680,32 @@ footer {
       margin: 6rem 0;
       border-radius: 20px;
       box-shadow: 0 4px 7px #cccccc5c;
+
       @media (max-width: 1180px) {
         max-width: 100%;
         padding: 1.6rem;
         margin: 0;
         margin-bottom: 2rem;
       }
+
       .why-choose-title {
         margin-bottom: 1rem;
+
         h3 {
           .head-font();
         }
       }
+
       .why-choose-shapes {
         position: absolute;
         right: 0;
         top: -20px;
+
         @media (max-width: 1180px) {
           display: none;
         }
       }
+
       .why-choose-shapes-2 {
         position: absolute;
         left: 0;
@@ -1690,6 +1713,7 @@ footer {
         animation: moverlefttoright 6s ease-out infinite;
       }
     }
+
     .why-choose-img {
       max-width: 60%;
       height: 600px;
@@ -1720,6 +1744,7 @@ footer {
   background: #f6f8fc;
   position: relative;
   overflow: hidden;
+
   .what-wedo-rounded {
     width: 200px;
     height: 200px;
@@ -1729,19 +1754,23 @@ footer {
     right: -80px;
     top: -100px;
   }
+
   .title {
     display: grid;
 
     margin-bottom: 3rem;
     max-width: 800px;
+
     h3 {
       .head-font();
     }
   }
+
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+
     @media (max-width: 1180px) {
       grid-template-columns: 1fr;
     }
@@ -1754,10 +1783,12 @@ footer {
       &:nth-child(odd) {
         .primary-bg();
         color: #fff;
+
         h3 {
           color: #fff;
         }
       }
+
       &:hover {
         transform: scale(1.03);
         box-shadow: 0 4px 7px #cccccc5c;
@@ -1767,6 +1798,7 @@ footer {
         img {
           height: 3rem;
         }
+
         margin-bottom: 1rem;
       }
 
@@ -1778,6 +1810,7 @@ footer {
 
       &.last {
         grid-column: 1 / span 2;
+
         @media (max-width: 1180px) {
           grid-column: 1 / span 1;
         }
@@ -1797,23 +1830,28 @@ footer {
 .team-page {
   padding: 3rem 0;
   margin: 4rem 0;
+
   .headerWrapper {
     max-width: 1286px;
     margin: 0 auto;
-}
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     position: relative;
+
     .team-card {
       .team-info {
         padding: 1rem 0;
-        .name-and-btn{
+
+        .name-and-btn {
           display: flex;
           justify-content: space-between;
           position: relative;
-          button{
+
+          button {
             background: none;
             border: none;
             width: 50px;
@@ -1824,15 +1862,18 @@ footer {
             right: 0;
           }
         }
-        h3{
+
+        h3 {
           font-size: 22px;
           font-family: @primary-font;
         }
-        h4{
+
+        h4 {
           font-size: 18px;
           font-family: @primary-font;
         }
       }
+
       .team-details {
         max-height: 0;
         overflow: hidden;
@@ -1845,22 +1886,172 @@ footer {
         transition: 1s;
         border-radius: 10px;
         display: block;
-        .team-details-content{
+
+        .team-details-content {
           padding: 3rem;
 
-          .data-info{
-            .name-and-designation{
-              h3{
+          .data-info {
+            .name-and-designation {
+              h3 {
                 font-size: 22px;
                 font-family: @primary-font;
               }
-              h4{
+
+              h4 {
                 font-size: 18px;
                 font-family: @primary-font;
               }
+
               margin-bottom: 3rem;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+// Case studies inner
+
+.case-studies-main {
+  margin: 8rem 0;
+  position: relative;
+
+  .main-block {
+    position: relative;
+   
+    background: #f7f7f7;
+    border-radius: 20px;
+
+    .page-line-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      .page-line {
+        width: 27.6%;
+        border-right: 1px solid #ebeaea;
+        display: block;
+        
+        height: auto;
+        max-height: auto;
+        min-height:  auto;
+      }
+      
+    }
+    .case-studies-block {
+   
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        padding: 3rem;
+        position: relative;
+        z-index: 12;
+        @media (max-width: 1100px) {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+          padding: 1rem;
+          &.wrapper-flipped {
+            display: flex;
+            flex-direction: column-reverse;
+          }
+        }
+
+        &.wrapper-flipped {
+          position: relative;
+          .case-studeis-content {
+            position: relative;
+            padding-right: 2rem;
+            padding-top: 2rem;
+            .pointer-flipped {
+              @media (max-width: 1100px) {
+                display: none;
+              }
+              width: 120px;
+              height: 2px;
+              background: #0040b9;
+              position: absolute;
+              right: -144px;
+              top: 73px;
+
+              &::after {
+                content: "";
+                width: 9px;
+                height: 9px;
+                display: block;
+                border-radius: 50%;
+                border: 2px solid #0040b9;
+                background: 0 0;
+                margin-left: 119px;
+                margin-top: -3px;
+              }
+            }
+            .studies-title {
+              text-align: right;
+            }
+            p {
+              text-align: right;
+            }
+            .read-more-btn {
+              text-align: right;
+            }
+          }
+        }
+
+        .case-studeis-content {
+          padding-left: 2rem;
+          padding-top: 2rem;
+          position: relative;
+          @media (max-width: 1100px) {
+            padding-left: 0 !important;
+          }
+          .pointer {
+            @media (max-width: 1100px) {
+              display: none;
+            }
+            width: 120px;
+            height: 2px;
+            background: #0040b9;
+            position: absolute;
+            left: -144px;
+            top: 73px;
+
+            &::before {
+              content: "";
+              width: 9px;
+              height: 9px;
+              display: block;
+              border-radius: 50%;
+              border: 2px solid #0040b9;
+              background: 0 0;
+              margin-left: -7px;
+              margin-top: -3px;
+            }
+          }
+          .studies-title {
+            h3 {
+              .head-font();
+            }
+            p {
+              margin-bottom: 0;
+            }
+          }
+
+          p {
+            font-size: 13px;
+          }
+          .read-more-btn {
+            margin-top: 3rem;
+            a {
+              .read-more-btn();
+              font-size: 13px !important;
+            }
+          }
+        }
+
+        .case-studeis-image {
         }
       }
     }

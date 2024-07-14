@@ -1758,3 +1758,168 @@ footer .footer-bottom p {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
+.case-studies-main {
+  margin: 8rem 0;
+  position: relative;
+}
+.case-studies-main .main-block {
+  position: relative;
+  background: #f7f7f7;
+  border-radius: 20px;
+}
+.case-studies-main .main-block .page-line-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+.case-studies-main .main-block .page-line-wrapper .page-line {
+  width: 27.6%;
+  border-right: 1px solid #ebeaea;
+  display: block;
+  height: auto;
+  max-height: auto;
+  min-height: auto;
+}
+.case-studies-main .main-block .case-studies-block .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  padding: 3rem;
+  position: relative;
+  z-index: 12;
+}
+@media (max-width: 1100px) {
+  .case-studies-main .main-block .case-studies-block .wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .case-studies-main .main-block .case-studies-block .wrapper.wrapper-flipped {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.case-studies-main .main-block .case-studies-block .wrapper.wrapper-flipped {
+  position: relative;
+}
+.case-studies-main .main-block .case-studies-block .wrapper.wrapper-flipped .case-studeis-content {
+  position: relative;
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+.case-studies-main .main-block .case-studies-block .wrapper.wrapper-flipped .case-studeis-content .pointer-flipped {
+  width: 120px;
+  height: 2px;
+  background: #0040b9;
+  position: absolute;
+  right: -144px;
+  top: 73px;
+}
+@media (max-width: 1100px) {
+  .case-studies-main .main-block .case-studies-block .wrapper.wrapper-flipped .case-studeis-content .pointer-flipped {
+    display: none;
+  }
+}
+.case-studies-main .main-block .case-studies-block .wrapper.wrapper-flipped .case-studeis-content .pointer-flipped::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #0040b9;
+  background: 0 0;
+  margin-left: 119px;
+  margin-top: -3px;
+}
+.case-studies-main .main-block .case-studies-block .wrapper.wrapper-flipped .case-studeis-content .studies-title {
+  text-align: right;
+}
+.case-studies-main .main-block .case-studies-block .wrapper.wrapper-flipped .case-studeis-content p {
+  text-align: right;
+}
+.case-studies-main .main-block .case-studies-block .wrapper.wrapper-flipped .case-studeis-content .read-more-btn {
+  text-align: right;
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  .case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content {
+    padding-left: 0 !important;
+  }
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .pointer {
+  width: 120px;
+  height: 2px;
+  background: #0040b9;
+  position: absolute;
+  left: -144px;
+  top: 73px;
+}
+@media (max-width: 1100px) {
+  .case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .pointer {
+    display: none;
+  }
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .pointer::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #0040b9;
+  background: 0 0;
+  margin-left: -7px;
+  margin-top: -3px;
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .studies-title h3 {
+  font-weight: 750;
+  font-size: 32px;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 994px) {
+  .case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .studies-title h3 {
+    font-size: 22px;
+  }
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .studies-title p {
+  margin-bottom: 0;
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content p {
+  font-size: 13px;
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .read-more-btn {
+  margin-top: 3rem;
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .read-more-btn a {
+  font-size: 13px !important;
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .read-more-btn a a {
+  color: #000;
+  font-weight: 550;
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .read-more-btn a a:hover {
+  text-decoration: none;
+  color: #16278d;
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .read-more-btn a a:hover::after {
+  margin-left: 1rem;
+}
+.case-studies-main .main-block .case-studies-block .wrapper .case-studeis-content .read-more-btn a a::after {
+  content: "";
+  display: inline-block;
+  width: 19.26px;
+  height: 12.51px;
+  margin-left: 0.6rem;
+  background-image: url("../images/button-arrow.svg");
+  z-index: 1212;
+  transition: 0.5s;
+}
