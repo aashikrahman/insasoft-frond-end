@@ -2187,3 +2187,122 @@ footer {
     }
   }
 }
+
+
+
+
+.what-we-android {
+  padding: 4rem 0;
+  margin: 2rem 0 0;
+  background: #f6f8fc;
+  position: relative;
+  overflow: hidden;
+
+  .what-wedo-rounded {
+    width: 200px;
+    height: 200px;
+    background: #0040b9;
+    border-radius: 50%;
+    position: absolute;
+    right: -80px;
+    top: -100px;
+  }
+
+  .title {
+    display: grid;
+
+    margin-bottom: 3rem;
+    
+
+    h3 {
+      .head-font();
+    }
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    @media (max-width: 1180px) {
+      grid-template-columns: 1fr;
+    }
+
+    .what-do-card {
+      background: #fff;
+      padding: 2rem 2rem;
+      transition: 0.5s;
+
+      &:nth-child(odd) {
+        .primary-bg();
+        color: #fff;
+
+        h3 {
+          color: #fff;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 4px 7px #cccccc5c;
+      }
+
+      .what-we-do-thumbnails {
+        img {
+          height: 3rem;
+        }
+
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 22px;
+        color: #0140b7;
+        font-family: @primary-font;
+      }
+
+      &.last {
+        grid-column: 1 / span 2;
+
+        @media (max-width: 1180px) {
+          grid-column: 1 / span 1;
+        }
+      }
+    }
+  }
+}
+
+.highlights-of-app{
+  margin: 3rem 0;
+  @media(max-width:990px){
+    margin-top: 0;
+  }
+
+  .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+
+    @media(max-width:1366px){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media(max-width:990px){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media(max-width:699px){
+      grid-template-columns: 1fr 1fr ;
+    }
+    @media(max-width:440px){
+      grid-template-columns: 1fr;
+    }
+    .cards{
+        text-align: center;
+        box-shadow: 0 4px 7px #cccccc5c;
+        padding: 1rem;
+    
+        h6{
+          font-family: @primary-font;
+        }
+    }
+  }
+}

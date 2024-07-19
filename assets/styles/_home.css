@@ -2059,3 +2059,124 @@ footer .footer-bottom p {
   margin: 3rem 0 0;
   height: 450px;
 }
+.what-we-android {
+  padding: 4rem 0;
+  margin: 2rem 0 0;
+  background: #f6f8fc;
+  position: relative;
+  overflow: hidden;
+}
+.what-we-android .what-wedo-rounded {
+  width: 200px;
+  height: 200px;
+  background: #0040b9;
+  border-radius: 50%;
+  position: absolute;
+  right: -80px;
+  top: -100px;
+}
+.what-we-android .title {
+  display: grid;
+  margin-bottom: 3rem;
+}
+.what-we-android .title h3 {
+  font-weight: 750;
+  font-size: 32px;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 994px) {
+  .what-we-android .title h3 {
+    font-size: 22px;
+  }
+}
+.what-we-android .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 1180px) {
+  .what-we-android .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.what-we-android .wrapper .what-do-card {
+  background: #fff;
+  padding: 2rem 2rem;
+  transition: 0.5s;
+}
+.what-we-android .wrapper .what-do-card:nth-child(odd) {
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  color: #fff;
+}
+.what-we-android .wrapper .what-do-card:nth-child(odd) h3 {
+  color: #fff;
+}
+.what-we-android .wrapper .what-do-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 7px #cccccc5c;
+}
+.what-we-android .wrapper .what-do-card .what-we-do-thumbnails {
+  margin-bottom: 1rem;
+}
+.what-we-android .wrapper .what-do-card .what-we-do-thumbnails img {
+  height: 3rem;
+}
+.what-we-android .wrapper .what-do-card h3 {
+  font-size: 22px;
+  color: #0140b7;
+  font-family: "Montserrat", sans-serif;
+}
+.what-we-android .wrapper .what-do-card.last {
+  grid-column: 1 / span 2;
+}
+@media (max-width: 1180px) {
+  .what-we-android .wrapper .what-do-card.last {
+    grid-column: 1 / span 1;
+  }
+}
+.highlights-of-app {
+  margin: 3rem 0;
+}
+@media (max-width: 990px) {
+  .highlights-of-app {
+    margin-top: 0;
+  }
+}
+.highlights-of-app .card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 1366px) {
+  .highlights-of-app .card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 990px) {
+  .highlights-of-app .card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 699px) {
+  .highlights-of-app .card-wrapper {
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+@media (max-width: 440px) {
+  .highlights-of-app .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+.highlights-of-app .card-wrapper .cards {
+  text-align: center;
+  box-shadow: 0 4px 7px #cccccc5c;
+  padding: 1rem;
+}
+.highlights-of-app .card-wrapper .cards h6 {
+  font-family: "Montserrat", sans-serif;
+}
