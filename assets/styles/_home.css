@@ -127,11 +127,6 @@
 .header nav .nav-menu ul li a .sub-services {
   position: absolute;
 }
-@media (max-width: 990px) {
-  .header nav .nav-menu ul li {
-    display: none;
-  }
-}
 .header nav .nav-menu ul .get-in-touch-button {
   position: relative;
   display: inline-block;
@@ -1726,7 +1721,7 @@ footer .footer-bottom p {
   object-fit: cover;
 }
 .team-page .wrapper .team-card .team-info {
-  padding: 1rem ;
+  padding: 1rem;
   box-shadow: 0px 25px 25px -25px rgba(0, 0, 0, 0.1);
   position: relative;
   top: -30px;
@@ -2164,7 +2159,7 @@ footer .footer-bottom p {
 }
 @media (max-width: 699px) {
   .highlights-of-app .card-wrapper {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 440px) {
