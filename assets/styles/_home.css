@@ -1103,6 +1103,20 @@
 .calltoAction .cta-swiper-main-box .cta-wrapper .cta-content p {
   color: #fff;
 }
+.calltoAction .cta-swiper-main-box .cta-wrapper .cta-content button.getTouch {
+  position: relative;
+  display: inline-block;
+  padding: 0.6em 2em;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  background: none;
+  font-size: 16px;
+  font-weight: 550;
+  color: #ffffff;
+}
 .calltoAction .cta-swiper-main-box .cta-wrapper .cta-content a {
   color: #fff;
   text-decoration: none;
