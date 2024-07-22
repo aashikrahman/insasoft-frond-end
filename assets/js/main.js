@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const popupForm = document.getElementById("popupFormMain");
 
-
-
-
   Array.from(activeBtn).forEach(button => {
     button.addEventListener('click', () => {
       popupForm.classList.add('form-active');
@@ -18,6 +15,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', (event)=>{
+  const hamBurger = document.getElementById("navHamburger");
+  const navBar = document.getElementById("navMenu");
+  const closeNav = document.getElementById ("closeNav");
+
+
+  hamBurger.addEventListener("click", ()=>{
+
+    navBar.classList.add("navMenuActive");
+  })
+
+  closeNav.addEventListener("click", ()=>{
+
+    navBar.classList.remove("navMenuActive");
+  })
+})
+
 
 
 $(document).ready(function () {

@@ -19,94 +19,129 @@
 </head>
 
 <body>
-    <!-- Header part -->
-    <header class="header">
-        <div class="container-centered">
-          <nav>
-            <div class="nav-logo">
-             <a href=""> <img src="assets/images/logo.png" class="img-fluid" alt="" /></a>
-            </div>
     
-            <div class="nav-menu">
-              <ul>
-                <li class="submenu">
-                  <a>Services</a>
-                  <div class="sub-menu-list">
-                    <ul>
-                      <li>
-                        <div class="mega-list">
-                          <h3>Android Application Development</h3>
-                          <a href="android_application.html">Overview</a>
-                          <a href="">Case Studies</a>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="mega-list">
-                          <h3>iOS Application Development</h3>
-                          <a href="Ios_application.html">Overview</a>
-                          <a href="">Case Studies</a>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="mega-list">
-                          <h3>React Native Application Development</h3>
-                          <a href="react_native.html">Overview</a>
-                          <a href="">Case Studies</a>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="mega-list">
-                          <h3>Web Application Development</h3>
-                          <a href="web_application.html">overview</a>
-                          <a href="">Case Studies</a>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="mega-list">
-                          <h3>Flutter Application Development</h3>
-                          <a href="flutter_application.html">overview</a>
-                          <a href="">Case Studies</a>
-                        </div>
-                      </li>
-                      
-                      <li>
-                        <div class="mega-list">
-                          <h3>Custom Software Development</h3>
-                          <a href="custome_software.html">overview</a>
-                          <a href="">Case Studies</a>
-                        </div>
-                      </li>
-    
-                      <li>
-                        <div class="mega-list">
-                          <h3>E Commerce</h3>
-                          <a href="e-commerce_solutions.html">overview</a>
-                          <a href="">Case Studies</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a href="about.html">About us</a>
-                </li>
-                <li>
-                  <a href="career.html">Career </a>
-                </li>
-                <li>
-                  <a href="contactus.html">Contact us</a>
-                </li>
-    
-                <button class="get-in-touch-button">Get in Touch</button>
-                <button class="hamburger-menu">
-                  <img src="assets/images/humburger.svg" class="img-fluid" alt="" />
-                </button>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <!---Form-->
 
+  <section class="form-popup" id="popupFormMain">
+
+    <div class="close-btn" id="closeForm">
+      <img src="assets/images/close-btn.svg" class="img-fluid" alt="">
+    </div>
+    <div class="container">
+      <div class="contactus-main-block">
+        <div class="contact-us-wrapper">
+          <div class="form-block">
+            <div class="form-title">
+              <h3>Get in Touch</h3>
+              <p>Ready to take the next step? Fill out the form below, and one of our friendly representatives will be
+                in touch to discuss your project and how Insasoft can help.</p>
+            </div>
+            <form>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Your Name" />
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Enter Email" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Phone Number" />
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Subject" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
+                  rows="3"></textarea>
+              </div>
+
+              <div class="submit-button">
+                <button>Submit</button>
+              </div>
+            </form>
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Form end-->
+
+
+
+  <!-- Header part -->
+
+  <header class="header">
+    <div class="container-centered">
+      <nav>
+        <div class="nav-logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" class="img-fluid" alt="" /></a>
+        </div>
+
+        <div class="nav-menu">
+          
+          <ul class="nav-main" id="navMenu">
+
+            <div class="navClose" id="closeNav">
+              <img src="assets/images/close-btn.svg" class="img-fluid" alt="">
+            </div>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="android_application.html">Android Application Development</a></li>
+                <li><a class="dropdown-item" href="Ios_application.html">iOS Application Development</a></li>
+                <li><a class="dropdown-item" href="react_native.html">React Native Application Development</a></li>
+                <li><a class="dropdown-item" href="flutter_application.html">Flutter Application Development</a></li>
+                <li><a class="dropdown-item" href="web_application.html">Web Application Development</a></li>
+                <li><a class="dropdown-item" href="custome_software.html">Custom Software Development</a></li>
+                <li><a class="dropdown-item" href="e-commerce_solutions.html">E Commerce</a></li>
+
+              </ul>
+            </li>
+            <li>
+              <a href="about.html">About us</a>
+            </li>
+            <li>
+              <a href="career.html">Career </a>
+            </li>
+            <li>
+              <a href="contactus.html">Contact us</a>
+            </li>
+          </ul>
+          <button class="getTouch get-in-touch-button" >Get in Touch</button>
+          <button class="hamburger-menu" id="navHamburger">
+            <img src="assets/images/humburger.svg" class="img-fluid" alt="" />
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Hero Banner -->
+  
     <!-- Hero Banner -->
     <section class="applications-banner">
         <div class="container-centered">
