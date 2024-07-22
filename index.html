@@ -14,76 +14,107 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
 
 <body>
+
+
+  <!---Form-->
+
+  <section class="form-popup" id="popupFormMain">
+
+    <div class="close-btn" id="closeForm">
+      <img src="assets/images/close-btn.svg" class="img-fluid" alt="">
+    </div>
+    <div class="container">
+      <div class="contactus-main-block">
+        <div class="contact-us-wrapper">
+          <div class="form-block">
+            <div class="form-title">
+              <h3>Get in Touch</h3>
+              <p>Ready to take the next step? Fill out the form below, and one of our friendly representatives will be
+                in touch to discuss your project and how Insasoft can help.</p>
+            </div>
+            <form>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Your Name" />
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Enter Email" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Phone Number" />
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Subject" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
+                  rows="3"></textarea>
+              </div>
+
+              <div class="submit-button">
+                <button>Submit</button>
+              </div>
+            </form>
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--Form end-->
+
+
+
   <!-- Header part -->
+
   <header class="header">
     <div class="container-centered">
       <nav>
         <div class="nav-logo">
-         <a href=""> <img src="assets/images/logo.png" class="img-fluid" alt="" /></a>
+          <a href="index.html">
+            <img src="assets/images/logo.png" class="img-fluid" alt="" /></a>
         </div>
 
         <div class="nav-menu">
           <ul>
-            <li class="submenu">
-              <a>Services</a>
-              <div class="sub-menu-list">
-                <ul>
-                  <li>
-                    <div class="mega-list">
-                      <h3>Android Application Development</h3>
-                      <a href="android_application.html">Overview</a>
-                      <a href="">Case Studies</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="mega-list">
-                      <h3>iOS Application Development</h3>
-                      <a href="Ios_application.html">Overview</a>
-                      <a href="">Case Studies</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="mega-list">
-                      <h3>React Native Application Development</h3>
-                      <a href="react_native.html">Overview</a>
-                      <a href="">Case Studies</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="mega-list">
-                      <h3>Web Application Development</h3>
-                      <a href="web_application.html">overview</a>
-                      <a href="">Case Studies</a>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="mega-list">
-                      <h3>Flutter Application Development</h3>
-                      <a href="flutter_application.html">overview</a>
-                      <a href="">Case Studies</a>
-                    </div>
-                  </li>
-                  
-                  <li>
-                    <div class="mega-list">
-                      <h3>Custom Software Development</h3>
-                      <a href="custome_software.html">overview</a>
-                      <a href="">Case Studies</a>
-                    </div>
-                  </li>
 
-                  <li>
-                    <div class="mega-list">
-                      <h3>E Commerce</h3>
-                      <a href="e-commerce_solutions.html">overview</a>
-                      <a href="">Case Studies</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="android_application.html">Android Application Development</a></li>
+                <li><a class="dropdown-item" href="Ios_application.html">iOS Application Development</a></li>
+                <li><a class="dropdown-item" href="react_native.html">React Native Application Development</a></li>
+                <li><a class="dropdown-item" href="flutter_application.html">Flutter Application Development</a></li>
+                <li><a class="dropdown-item" href="web_application.html">Web Application Development</a></li>
+                <li><a class="dropdown-item" href="custome_software.html">Custom Software Development</a></li>
+                <li><a class="dropdown-item" href="e-commerce_solutions.html">E Commerce</a></li>
+
+              </ul>
             </li>
             <li>
               <a href="about.html">About us</a>
@@ -94,16 +125,16 @@
             <li>
               <a href="contactus.html">Contact us</a>
             </li>
-
-            <button class="get-in-touch-button">Get in Touch</button>
-            <button class="hamburger-menu">
-              <img src="assets/images/humburger.svg" class="img-fluid" alt="" />
-            </button>
           </ul>
+          <button class="getTouch get-in-touch-button" id="">Get in Touch</button>
+          <button class="hamburger-menu">
+            <img src="assets/images/humburger.svg" class="img-fluid" alt="" />
+          </button>
         </div>
       </nav>
     </div>
   </header>
+
 
   <!-- Hero Banner -->
 
@@ -157,12 +188,13 @@
         <!-- service boxes -->
         <div class="service-box" data-aos="fade-up" data-aos-duration="1000">
           <div class="app-icons">
-            <img src="assets/images/app-icon.png" class="img-fluid" alt="" />
+            <img src="assets/images/android-app.svg" class="img-fluid" alt="" />
           </div>
           <h5>Android Application, Development</h5>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.Lorem Ipsum has been the industry's
+            With Insasoft, you will find the best Android developers in Doha,
+            Qatar. With our team of seasoned pros, we make top-tier Android
+            apps that fit your business's needs.
           </p>
           <a href="">Read More
             <i class="arrow-icon"><img src="assets/images/right-arrow.svg" class="img-fluid" alt="" /></i>
@@ -178,12 +210,13 @@
         <!-- service boxes -->
         <div class="service-box" data-aos="fade-up" data-aos-duration="1000">
           <div class="app-icons">
-            <img src="assets/images/app-icon.png" class="img-fluid" alt="" />
+            <img src="assets/images/ios.svg" class="img-fluid" alt="" />
           </div>
-          <h5>Android Application, Development</h5>
+          <h5>iOS Application Development</h5>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.Lorem Ipsum has been the industry's
+            At Insasoft in Doha, Qatar, we excel in iOS app development,
+            crafting innovative and user-centric applications that elevate
+            business success.
           </p>
           <a href="">Read More
             <i class="arrow-icon"><img src="assets/images/right-arrow.svg" class="img-fluid" alt="" /></i>
@@ -199,12 +232,15 @@
         <!-- service boxes -->
         <div class="service-box" data-aos="fade-up" data-aos-duration="1000">
           <div class="app-icons">
-            <img src="assets/images/app-icon.png" class="img-fluid" alt="" />
+            <img src="assets/images/react.svg" class="img-fluid" alt="" />
           </div>
-          <h5>Android Application, Development</h5>
+          <h5>React Native Application Development</h5>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.Lorem Ipsum has been the industry's
+            Insasoft provides cutting-edge mobile app solutions through its
+            React Native app development company in Doha, Qatar. With React
+            Native technology, we build fast, responsive, and
+            platform-agnostic apps for both iOS and Android that are visually
+            stunning and highly functional.
           </p>
           <a href="">Read More
             <i class="arrow-icon"><img src="assets/images/right-arrow.svg" class="img-fluid" alt="" /></i>
@@ -220,12 +256,15 @@
         <!-- service boxes -->
         <div class="service-box" data-aos="fade-up" data-aos-duration="1000">
           <div class="app-icons">
-            <img src="assets/images/app-icon.png" class="img-fluid" alt="" />
+            <img src="assets/images/web_app.svg" class="img-fluid" alt="" />
           </div>
-          <h5>Android Application, Development</h5>
+          <h5>Web Application Development</h5>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.Lorem Ipsum has been the industry's
+            As a top web development company in Doha, Insasoft provides custom
+            e-commerce and enterprise web applications to streamline
+            operations and increase customer satisfaction. Our skilled
+            developers design intuitive web applications that integrate
+            seamlessly with existing systems.
           </p>
           <a href="">Read More
             <i class="arrow-icon"><img src="assets/images/right-arrow.svg" class="img-fluid" alt="" /></i>
@@ -241,12 +280,14 @@
         <!-- service boxes -->
         <div class="service-box" data-aos="fade-down" data-aos-duration="1000">
           <div class="app-icons">
-            <img src="assets/images/app-icon.png" class="img-fluid" alt="" />
+            <img src="assets/images/flutter.svg" class="img-fluid" alt="" />
           </div>
-          <h5>Android Application, Development</h5>
+          <h5>Flutter Application Development</h5>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.Lorem Ipsum has been the industry's
+            Insasoft is a leading Flutter app development company in Doha,
+            Qatar, offering visually stunning and technologically advanced
+            mobile applications. To produce captivating digital experiences,
+            we combine design, functionality, and performance.
           </p>
           <a href="">Read More
             <i class="arrow-icon"><img src="assets/images/right-arrow.svg" class="img-fluid" alt="" /></i>
@@ -262,12 +303,15 @@
         <!-- service boxes -->
         <div class="service-box" data-aos="fade-down" data-aos-duration="1000">
           <div class="app-icons">
-            <img src="assets/images/app-icon.png" class="img-fluid" alt="" />
+            <img src="assets/images/software.svg" class="img-fluid" alt="" />
           </div>
-          <h5>Android Application, Development</h5>
+          <h5>Custom Software Development</h5>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.Lorem Ipsum has been the industry's
+            At Insasoft, we are the leading custom software development
+            company in Doha, Qatar, dedicated to creating tailored solutions
+            that align with your business goals. We simplify operations, boost
+            efficiency, and address challenges in your enterprise. We offer
+            ERP, CRM, e-commerce, and industry-specific software.
           </p>
           <a href="">Read More
             <i class="arrow-icon"><img src="assets/images/right-arrow.svg" class="img-fluid" alt="" /></i>
@@ -283,12 +327,15 @@
         <!-- service boxes -->
         <div class="service-box" data-aos="fade-down" data-aos-duration="1000">
           <div class="app-icons">
-            <img src="assets/images/app-icon.png" class="img-fluid" alt="" />
+            <img src="assets/images/e-commerce.svg" class="img-fluid" alt="" />
           </div>
-          <h5>Android Application, Development</h5>
+          <h5>E-Commerce Solution</h5>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.Lorem Ipsum has been the industry's
+            We offer bespoke e-commerce solutions tailored to your business
+            objectives in Doha, Qatar. Insosoft specializes in e-commerce
+            development, web design, and digital marketing. For maximum
+            efficiency, we integrate seamlessly with your existing systems and
+            focus on innovation.
           </p>
           <a href="">Read More
             <i class="arrow-icon"><img src="assets/images/right-arrow.svg" class="img-fluid" alt="" /></i>
@@ -304,12 +351,14 @@
         <!-- service boxes -->
         <div class="service-box" data-aos="fade-down" data-aos-duration="1000">
           <div class="app-icons">
-            <img src="assets/images/app-icon.png" class="img-fluid" alt="" />
+            <img src="assets/images/ui-ux.svg" class="img-fluid" alt="" />
           </div>
-          <h5>Android Application, Development</h5>
+          <h5>UI/UX Designing</h5>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.Lorem Ipsum has been the industry's
+            Insasoft in Doha, Qatar, is the ultimate UI/UX maestro, crafting
+            user interfaces that go beyond functionality. We create designs
+            that captivate and empower users. The digital platforms we create
+            are user-friendly, visually appealing, and intuitive.
           </p>
           <a href="">Read More
             <i class="arrow-icon"><img src="assets/images/right-arrow.svg" class="img-fluid" alt="" /></i>
@@ -362,7 +411,7 @@
             same.
           </p>
 
-          <a href="">Explore About Insasoft</a>
+          <a href="about.html">Explore About Insasoft</a>
         </div>
       </div>
     </div>
@@ -413,7 +462,7 @@
           <h2>Case Studies</h2>
         </div>
         <div class="read-more">
-          <a href="">View More Case Studies</a>
+          <a href="case-studies.html">View More Case Studies</a>
         </div>
       </div>
 
@@ -569,13 +618,12 @@
                     </div>
 
                     <div class="testimonial-para">
+                      <p><strong>iOS Application Development</strong></p>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit
-                        in non nisi ut lectus rutrum facilisis sed vitae erat
-                        duis elementum et nibh sed viverra phasellus eget diam
-                        quis nisl vehicula pharetra at in nunc etiam dui elit
-                        vestibulum nec consequat quis gravida et dolor donec
-                        vitae suscipit sem.
+                        We have taken our business to the next level thanks to
+                        Insasoft's expertise in iOS app development. Their
+                        dedication to quality and customer satisfaction is
+                        unparalleled.
                       </p>
                     </div>
 
@@ -585,8 +633,8 @@
                       </div>
 
                       <div class="profile-name">
-                        <h6>Prabhat Venkat</h6>
-                        <p>Loerem Ipsum</p>
+                        <h6>Ahmed Al-Khater,</h6>
+                        <p>CEO, Al-Khater Group, Qatar</p>
                       </div>
                     </div>
                   </div>
@@ -599,12 +647,13 @@
 
                     <div class="testimonial-para">
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit
-                        in non nisi ut lectus rutrum facilisis sed vitae erat
-                        duis elementum et nibh sed viverra phasellus eget diam
-                        quis nisl vehicula pharetra at in nunc etiam dui elit
-                        vestibulum nec consequat quis gravida et dolor donec
-                        vitae suscipit sem.
+                        <strong>React Native Application Development </strong>
+                      </p>
+                      <p>
+                        The React Native app development services from
+                        Insasoft have enabled us to create seamless user
+                        experiences across multiple platforms. Their team is
+                        highly skilled and responsive.
                       </p>
                     </div>
 
@@ -614,8 +663,71 @@
                       </div>
 
                       <div class="profile-name">
-                        <h6>Prabhat Venkat</h6>
-                        <p>Loerem Ipsum</p>
+                        <h6>Fatima Al-Thani,</h6>
+                        <p>CTO, Al-Thani Group, Kuwait</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="client-testimonials">
+                    <div class="testimonials-quotes">
+                      <img src="assets/images/quotes.svg" class="img-fluid" alt="" />
+                    </div>
+
+                    <div class="testimonial-para">
+                      <p>
+                        <strong>Web Application Development
+                        </strong>
+                      </p>
+                      <p>
+                        Using Insasoft's web application development services has transformed our e-commerce business.
+                        Their team is highly professional and delivered the project on time.
+
+                      </p>
+                    </div>
+
+                    <div class="client-data">
+                      <div class="profile-pic">
+                        <img src="assets/images/profile.png" class="img-fluid" alt="" />
+                      </div>
+
+                      <div class="profile-name">
+                        <h6>Omar Al-Mansoor,
+                        </h6>
+                        <p>CEO, Al-Mansoor Trading, UAE</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="client-testimonials">
+                    <div class="testimonials-quotes">
+                      <img src="assets/images/quotes.svg" class="img-fluid" alt="" />
+                    </div>
+
+                    <div class="testimonial-para">
+                      <p>
+                        <strong> UI/UX Designing
+                        </strong>
+                      </p>
+                      <p>
+                        The UI/UX designing services provided by Insasoft helped us develop an app that is visually
+                        striking and easy to use, which has led to a significant improvement in customer engagement.
+                        Their team is highly creative and attentive to detail.
+
+                      </p>
+                    </div>
+
+                    <div class="client-data">
+                      <div class="profile-pic">
+                        <img src="assets/images/profile.png" class="img-fluid" alt="" />
+                      </div>
+
+                      <div class="profile-name">
+                        <h6>Rashid Al-Rumaihi,
+                        </h6>
+                        <p>CMO, Al-Rumaihi Group, Bahrain</p>
                       </div>
                     </div>
                   </div>
@@ -653,8 +765,8 @@
                     your project details and our team will contact you with a
                     quote tailored to your needs.
                   </p>
-
-                  <a href="">Contact Us</a>
+                  <button class="getTouch" >Contact Us</button>
+                 
                 </div>
               </div>
             </div>
@@ -793,35 +905,34 @@
             <img src="assets/images/logo.png" class="img-fluid" alt="" />
           </div>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled
+            We help Businesses improve the digital experience by developing cutting-edge web and mobile applications in
+            Qatar and Kerala
+
           </p>
         </div>
 
         <div class="footer-menus">
           <ul>
             <li>
-              <a href="">Android Application Development</a>
+              <a href="android_application.html">Android Application Development</a>
             </li>
             <li>
-              <a href="">iOS Application Development</a>
+              <a href="Ios_application.html">iOS Application Development</a>
             </li>
             <li>
-              <a href="">React Native Application Development</a>
+              <a href="react_native.html">React Native Application Development</a>
             </li>
             <li>
-              <a href="">Web Application Development</a>
+              <a href="web_application.html">Web Application Development</a>
             </li>
             <li>
-              <a href="">Flutter Application Development</a>
+              <a href="flutter_application.html">Flutter Application Development</a>
             </li>
             <li>
-              <a href="">Custom Software Development</a>
+              <a href="custome_software.html">Custom Software Development</a>
             </li>
             <li>
-              <a href="">E Commerce Solution</a>
+              <a href="e-commerce_solutions.html">E Commerce Solution</a>
             </li>
           </ul>
         </div>
@@ -829,11 +940,14 @@
         <div class="footer-contact">
           <ul>
             <li>
-              Second Floor، Office 202 Petrofac Building, C Ring Rd, Doha,
-              Qatar
+              Insasoft Technologies LLP
+              Office 1201, Al Fardan Office Tower
+              Al Funduq Street, Doha, Qatar
+
             </li>
-            <li><a href="">+974 123 3333 3333</a></li>
-            <li><a href=""></a>info@insasoft.com</li>
+            <li><a href="">+974 4444 5555
+              </a></li>
+            <li><a href=""></a>info@insasoft.in</li>
           </ul>
         </div>
       </div>
@@ -862,7 +976,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Script CDNS End -->
 
-
+  <!-- Script CDNS End -->
   <script>
     AOS.init({
       duration: 2000,

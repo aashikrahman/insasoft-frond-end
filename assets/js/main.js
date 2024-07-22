@@ -1,4 +1,23 @@
 
+document.addEventListener('DOMContentLoaded', (event) => {
+  const activeBtn = document.getElementsByClassName("getTouch");
+  const closeBtn = document.getElementById("closeForm");
+
+  const popupForm = document.getElementById("popupFormMain");
+
+
+
+
+  Array.from(activeBtn).forEach(button => {
+    button.addEventListener('click', () => {
+      popupForm.classList.add('form-active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      popupForm.classList.remove('form-active');
+    });
+  });
+});
 
 
 $(document).ready(function () {
@@ -60,21 +79,21 @@ $(document).ready(function () {
     autoplayTimeout: 0,
     autoplaySpeed: 3000,
     autoplayHoverPause: false,
-    responsive:{
-      0:{
-          items:1,
-          nav:true
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
       },
-      600:{
-          items:3,
-          nav:false
+      600: {
+        items: 3,
+        nav: false
       },
-      1000:{
-          items:5,
-          nav:true,
-          loop:false
+      1000: {
+        items: 5,
+        nav: true,
+        loop: false
       }
-  }
+    }
 
   });
 
@@ -90,14 +109,14 @@ let SwiperTop = new Swiper('.swiper--top', {
     delay: 1,
   },
   loop: true,
-  slidesPerView:'auto',
+  slidesPerView: 'auto',
   allowTouchMove: false,
   disableOnInteraction: true,
-  breakpoints: {  
+  breakpoints: {
     '480': {
       slidesPerView: 3,
-     },
-   
+    },
+
   },
 });
 
@@ -113,9 +132,9 @@ var swiper = new swiper(".mySwiperCleint", {
     dynamicBullets: true,
   },
   navigation: {
-  nextEl: '.swiper-testi-next',
-  prevEl: '.swiper-testi-prev',
-},
+    nextEl: '.swiper-testi-next',
+    prevEl: '.swiper-testi-prev',
+  },
 });
 
 // testimonials
@@ -131,5 +150,7 @@ var swiper = new Swiper('.swiper-container', {
     disableOnInteraction: false, // Autoplay continues even if user interacts with swiper
   },
 });
+
+
 
 

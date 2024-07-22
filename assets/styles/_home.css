@@ -72,9 +72,65 @@
 }
 .header nav .nav-menu {
   position: relative;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 990px) {
+  .header nav .nav-menu ul {
+    position: fixed;
+    right: 0;
+    z-index: 12;
+    width: 100%;
+    background: #fff;
+    height: 100vh;
+    top: 0;
+    padding: 3rem 1rem;
+  }
 }
 .header nav .nav-menu ul li {
   display: inline-block;
+}
+@media (max-width: 990px) {
+  .header nav .nav-menu ul li {
+    display: block !important;
+  }
+}
+.header nav .nav-menu ul li.dropdown ul {
+  margin-top: 1rem !important;
+}
+.header nav .nav-menu ul li.dropdown ul li {
+  margin-bottom: 1rem;
+}
+.header nav .nav-menu ul li.dropdown ul.sub-menu-list {
+  z-index: 1212;
+  background: #fff;
+  margin-top: 1.3rem;
+  transition: 0.5s;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 4px 7px #cccccc5c;
+  margin-top: 52px !important;
+  margin-right: 2rem !important;
+  padding: 3rem;
+}
+.header nav .nav-menu ul li.dropdown ul.sub-menu-list .submenu-list-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+.header nav .nav-menu ul li.dropdown ul.sub-menu-list .submenu-list-wrapper .mega-list {
+  display: flex;
+  flex-direction: column;
+}
+.header nav .nav-menu ul li.dropdown ul.sub-menu-list .submenu-list-wrapper .mega-list h3 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  text-wrap: nowrap;
+}
+.header nav .nav-menu ul li.dropdown ul.sub-menu-list .submenu-list-wrapper .mega-list a {
+  padding: 0;
+  font-size: 14px;
+  margin-bottom: 0.3rem;
 }
 .header nav .nav-menu ul li.submenu:hover .sub-menu-list {
   opacity: 1;
@@ -127,7 +183,7 @@
 .header nav .nav-menu ul li a .sub-services {
   position: absolute;
 }
-.header nav .nav-menu ul .get-in-touch-button {
+.header nav .nav-menu .get-in-touch-button {
   position: relative;
   display: inline-block;
   margin: 0 1em;
@@ -143,11 +199,11 @@
   color: #2459A8;
 }
 @media (max-width: 994px) {
-  .header nav .nav-menu ul .get-in-touch-button {
+  .header nav .nav-menu .get-in-touch-button {
     display: none !important;
   }
 }
-.header nav .nav-menu ul .hamburger-menu {
+.header nav .nav-menu .hamburger-menu {
   position: relative;
   display: inline-block;
   height: 48px;
@@ -408,6 +464,7 @@
   z-index: 2112;
   margin-left: 42px;
   margin-top: 16px;
+  height: 3rem;
 }
 .service-box-main .service-box a {
   text-decoration: none;
@@ -2174,4 +2231,71 @@ footer .footer-bottom p {
 }
 .highlights-of-app .card-wrapper .cards h6 {
   font-family: "Montserrat", sans-serif;
+}
+.form-popup {
+  position: fixed;
+  transform: translate(-2000px);
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 1212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.form-popup.form-active {
+  transform: translate(0) !important;
+}
+.form-popup .close-btn {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+.form-popup .close-btn img {
+  height: 3rem;
+}
+.form-popup .contactus-main-block .form-block .form-title h3 {
+  padding-bottom: 1rem;
+  display: block;
+  font-weight: 750;
+  font-size: 32px;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 994px) {
+  .form-popup .contactus-main-block .form-block .form-title h3 {
+    font-size: 22px;
+  }
+}
+.form-popup .contactus-main-block .form-block form .form-group {
+  margin-bottom: 1rem;
+}
+.form-popup .contactus-main-block .form-block form .form-group input {
+  height: 3rem;
+  border-radius: 0;
+  font-size: 14px;
+  border: 1px solid #ebebeb;
+}
+.form-popup .contactus-main-block .form-block form .form-group .form-control {
+  border-radius: 0;
+  border: 1px solid #ebebeb;
+}
+.form-popup .contactus-main-block .form-block form .submit-button {
+  margin-top: 3rem;
+}
+.form-popup .contactus-main-block .form-block form .submit-button button {
+  padding: 0.5rem 3rem;
+  border: 1px solid #0040b9;
+  background: #0040b9;
+  background: linear-gradient(90deg, #0040b9 0%, #002481 100%);
+  color: #fff;
+}
+.form-popup .contactus-main-block .form-block form .submit-button button:hover {
+  background: #fff;
+  color: #000000;
 }
